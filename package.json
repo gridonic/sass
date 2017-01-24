@@ -1,0 +1,19 @@
+{
+  "name": "sass",
+  "version": "0.1.0",
+  "description": "Our sass foundation.",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass styles.scss",
+    "test": "npm run build -- > /dev/null && echo ✔︎  OK"
+  },
+  "author": "Gridonic AG <hello@gridonic.ch>",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "4.3.0"
+  },
+  "dependencies": {
+    "include-media": "1.4.9",
+    "normalize.css": "5.0.0"
+  }
+}
