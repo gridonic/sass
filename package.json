@@ -4,8 +4,10 @@
   "description": "Our sass foundation.",
   "main": "index.js",
   "scripts": {
-    "build": "node-sass styles.scss",
-    "test": "npm run build -- > /dev/null && echo ✔︎  OK"
+    "build": "node-sass styles.scss build/styles.css",
+    "build:prod": "npm run build -- --output-style compressed",
+    "watch": "npm run build -- --watch",
+    "test": "npm run build && echo ✔︎  OK"
   },
   "author": "Gridonic AG <hello@gridonic.ch>",
   "license": "MIT",
