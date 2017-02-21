@@ -1,0 +1,99 @@
+// -----------------------------------------------------------------------------
+// Common font weights.
+// http://www.w3.org/TR/css3-fonts/#font-weight-prop
+//
+// 100 - Thin
+// 200 - Extra Light (Ultra Light)
+// 300 - Light
+// 400 - Normal
+// 500 - Medium
+// 600 - Semi Bold (Demi Bold)
+// 700 - Bold
+// 800 - Extra Bold (Ultra Bold)
+// 900 - Black (Heavy)
+// -----------------------------------------------------------------------------
+
+/*
+    Typography
+
+    The overall used font family is `#{$font-text-family}`. Headlines are
+    having `#{$font-text-family}` as the main font family.
+
+    Styleguide 1.1
+*/
+
+/*
+    Paragraphs
+
+    Use `p`-Tags in order to create a paragraph.
+
+    markup:
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio dolor,
+    odio velit dolores hic quia, repellendus culpa itaque tenetur totam,
+    nesciunt aliquam quas ut possimus! Nemo fuga distinctio qui. Magni!</p>
+
+    Styleguide 1.1.1
+*/
+
+:root {
+    font-size: 16px;
+}
+
+body {
+    color: $brand-text-primary;
+    font-family: $font-text-family;
+    font-size: $font-text-size;
+    line-height: $font-text-line-height;
+    text-rendering: $font-text-rendering;
+}
+
+/*
+    Headlines
+
+    All `h{1..6}`-Tags are formatted and ready for usage. Use the `h{1..6}`
+    classes if you need to style non headline markup as headlines.
+
+    markup:
+    <h1 class="h1">Headline The quick brown fox jumps over the lazy dog.</h1>
+    <h2 class="h2">Jackdaws love my big sphinx of quartz.</h2>
+    <h3 class="h3">Pack my box with five dozen liquor jugs.</h3>
+    <h4 class="h4">Five quacking Zephyrs jolt my wax bed.</h4>
+
+    Styleguide 1.1.2
+*/
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    color: $brand-text-primary;
+    font-family: $font-headline-family;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h1, .h1 {
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+h2, .h2 {
+    color: #333333;
+    font-size: 32px;
+    line-height: 44px;
+}
+
+h3, .h3 {
+    color: #333333;
+    font-size: 22px;
+    line-height: 32px;
+}
+
+h4, .h4 {
+    font-size: 1.125rem;
+}
+
+h5, .h5 {
+    font-size: 1rem;
+}

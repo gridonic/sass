@@ -1,0 +1,34 @@
+{
+  "name": "@gridonic/sass",
+  "version": "1.0.0",
+  "description": "Our Sass foundation.",
+  "main": "styles.scss",
+  "scripts": {
+    "build": "node-sass styles.scss build/styles.css",
+    "build:prod": "npm run build -- --output-style compressed",
+    "watch": "npm run build -- --watch",
+    "test": "npm run build && echo ✔︎  OK"
+  },
+  "author": "Gridonic AG <hello@gridonic.ch>",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^4.5.0"
+  },
+  "dependencies": {
+    "include-media": "^1.4.9",
+    "normalize.css": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gridonic/sass.git"
+  },
+  "keywords": [
+    "sass",
+    "css",
+    "boilerplate"
+  ],
+  "bugs": {
+    "url": "https://github.com/gridonic/sass/issues"
+  },
+  "homepage": "https://github.com/gridonic/sass#readme"
+}
