@@ -12,11 +12,11 @@
   "author": "Gridonic AG <hello@gridonic.ch>",
   "license": "MIT",
   "devDependencies": {
-    "node-sass": "4.3.0"
+    "node-sass": "^4.5.0"
   },
   "dependencies": {
-    "include-media": "1.4.9",
-    "normalize.css": "5.0.0"
+    "include-media": "^1.4.9",
+    "normalize.css": "^5.0.0"
   },
   "repository": {
     "type": "git",
