@@ -1,8 +1,8 @@
 {
   "name": "@gridonic/sass",
-  "version": "0.1.0",
-  "description": "Our sass foundation.",
-  "main": "index.js",
+  "version": "1.0.0",
+  "description": "Our Sass foundation.",
+  "main": "styles.scss",
   "scripts": {
     "build": "node-sass styles.scss build/styles.css",
     "build:prod": "npm run build -- --output-style compressed",
