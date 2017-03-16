@@ -1,10 +1,10 @@
 /*!-----------------------------------------------------------------------------
    Master Stylesheet.
 
-   Project:       %project%
-   Version:       %version%
-   Contributors:  Gridonic AG <info@gridonic.ch>
-   URL:           %url%
+   Project:       <%= project %>
+   Version:       <%= version %>
+   Contributors:  Gridonic <hello@gridonic.ch>
+   URL:           <%= url %>
    -------------------------------------------------------------------------- */
 
 // -----------------------------------------------------------------------------
@@ -33,3 +33,10 @@
 // could be buttons, banners, lists, dialogs and so on.
 // -----------------------------------------------------------------------------
 @import "components";
+
+// -----------------------------------------------------------------------------
+// Everything that is not working in a component based approach will somewhen
+// end up as an exception. For example if you need to adjust stylings of a
+// component based on pages rather than on conditions then put it here.
+// -----------------------------------------------------------------------------
+@import "exceptions";
