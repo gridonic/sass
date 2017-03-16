@@ -1,9 +1,11 @@
 /*
-    Shared
+---
+name: Shared
+category: shared
+hidePath: true
+---
 
-    All styles which are used throughout the whole website get in here.
-
-    Styleguide 1.0
+All styles which are used throughout the whole web application get in here.
 */
 @import "shared/debug";
 @import "shared/generic";

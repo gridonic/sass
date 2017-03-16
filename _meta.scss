@@ -1,8 +1,16 @@
-// -----------------------------------------------------------------------------
-// The meta folder holds files which only have functions, mixins, variables and
-// other definitions which do NOT compile to CSS.
-// -----------------------------------------------------------------------------
+/*
+---
+name: Meta
+category: meta
+hidePath: true
+---
+
+The meta folder/category holds files which only have functions, mixins,
+variables and other definitions which do **not** compile to CSS.
+*/
 @import "meta/functions";
 @import "meta/mixins";
 @import "meta/config";
 @import "meta/placeholders";
+@import "meta/colors";
+@import "meta/breakpoints";

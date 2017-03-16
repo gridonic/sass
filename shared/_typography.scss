@@ -1,40 +1,33 @@
-// -----------------------------------------------------------------------------
-// Common font weights.
-// http://www.w3.org/TR/css3-fonts/#font-weight-prop
-//
-// 100 - Thin
-// 200 - Extra Light (Ultra Light)
-// 300 - Light
-// 400 - Normal
-// 500 - Medium
-// 600 - Semi Bold (Demi Bold)
-// 700 - Bold
-// 800 - Extra Bold (Ultra Bold)
-// 900 - Black (Heavy)
-// -----------------------------------------------------------------------------
-
 /*
-    Typography
+---
+name: Typography
+tag:
+  - typography
+category:
+  - shared
+  - shared/typography
+---
 
-    The overall used font family is `#{$font-text-family}`. Headlines are
-    having `#{$font-text-family}` as the main font family.
+The overall used font family is `#{$font-text-family}`. Headlines are
+having `#{$font-text-family}` as the main font family.
 
-    Styleguide 1.1
+For your information the following `font-weight` values roughly correspond to
+the commonly used weight names below.<sup>[1]</sup>
+
+```
+100 - Thin
+200 - Extra Light (Ultra Light)
+300 - Light
+400 - Normal
+500 - Medium
+600 - Semi Bold (Demi Bold)
+700 - Bold
+800 - Extra Bold (Ultra Bold)
+900 - Black (Heavy)
+```
+
+[1]: http://www.w3.org/TR/css3-fonts/#font-weight-prop
 */
-
-/*
-    Paragraphs
-
-    Use `p`-Tags in order to create a paragraph.
-
-    markup:
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio dolor,
-    odio velit dolores hic quia, repellendus culpa itaque tenetur totam,
-    nesciunt aliquam quas ut possimus! Nemo fuga distinctio qui. Magni!</p>
-
-    Styleguide 1.1.1
-*/
-
 :root {
     font-size: 16px;
 }
@@ -48,18 +41,25 @@ body {
 }
 
 /*
-    Headlines
+---
+name: Headlines
+tag:
+  - typography
+category:
+  - shared
+  - shared/typography
+  - shared/typography/headlines
+---
 
-    All `h{1..6}`-Tags are formatted and ready for usage. Use the `h{1..6}`
-    classes if you need to style non headline markup as headlines.
+All `h{1..6}`-Tags are formatted and ready for usage. Use the `h{1..6}`
+classes if you need to style non headline markup as headlines.
 
-    markup:
-    <h1 class="h1">Headline The quick brown fox jumps over the lazy dog.</h1>
-    <h2 class="h2">Jackdaws love my big sphinx of quartz.</h2>
-    <h3 class="h3">Pack my box with five dozen liquor jugs.</h3>
-    <h4 class="h4">Five quacking Zephyrs jolt my wax bed.</h4>
-
-    Styleguide 1.1.2
+```html
+<h1 class="h1">Headline The quick brown fox jumps over the lazy dog.</h1>
+<h2 class="h2">Jackdaws love my big sphinx of quartz.</h2>
+<h3 class="h3">Pack my box with five dozen liquor jugs.</h3>
+<h4 class="h4">Five quacking Zephyrs jolt my wax bed.</h4>
+```
 */
 h1, .h1,
 h2, .h2,
@@ -67,33 +67,48 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-    color: $brand-text-primary;
     font-family: $font-headline-family;
-    margin-top: 0;
+    font-weight: normal;
     margin-bottom: 0;
+    margin-top: 0;
 }
 
 h1, .h1 {
-    font-size: 2rem;
-    line-height: 1.5;
+    font-size: 2.25rem;
 }
 
 h2, .h2 {
-    color: #333333;
-    font-size: 32px;
-    line-height: 44px;
+    font-size: 2rem;
 }
 
 h3, .h3 {
-    color: #333333;
-    font-size: 22px;
-    line-height: 32px;
+    font-size: 1.5rem;
 }
 
 h4, .h4 {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
 }
 
 h5, .h5 {
-    font-size: 1rem;
+    font-size: 1.125rem;
 }
+
+/*
+---
+name: Paragraphs
+tag:
+  - typography
+category:
+  - shared
+  - shared/typography
+  - shared/typography/paragraphs
+---
+
+Use `p`-Tags in order to create a paragraph.
+
+```html
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio dolor,
+odio velit dolores hic quia, repellendus culpa itaque tenetur totam,
+nesciunt aliquam quas ut possimus! Nemo fuga distinctio qui. Magni!</p>
+```
+*/

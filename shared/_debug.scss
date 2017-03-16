@@ -1,13 +1,15 @@
 /*
-    Debug
+---
+name: Debug
+category: debug
+hidePath: true
+---
 
-    For visual and script debugging just run any url with `debug=1`, or type
-    `:debug` or set a localStorage item called `debug` with a value of `1`.
-    This will enable the debug mode and give you additional scripting output as
-    well as visual debugging output like the current breakpoint and the
-    vertical baseline grid.
-
-    Styleguide 4
+For visual and script debugging just run any url with `debug=1`, or type
+`:debug` or set a localStorage item called `debug` with a value of `1`.
+This will enable the debug mode and give you additional scripting output as
+well as visual debugging output like the current breakpoint and the
+vertical baseline grid.
 */
 .debug-mode {
     $highlight-color: $brand-warning;

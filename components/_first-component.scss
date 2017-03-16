@@ -1,14 +1,22 @@
 /*
-    First component
+---
+name: First component
+tag:
+  - components
+  - group
+category:
+  - components
+  - components/group
+  - components/group/first component
+---
 
-    This is my very first component.
+This is my very first component. 🎉
 
-    markup:
-    <div class="first-component">
-        <span class="title">Hi</span>
-    </div>
-
-    Styleguide 2.1.0
+```html
+<div class="first-component">
+    <span class="title">Hi</span>
+</div>
+```
 */
 .first-component {
     > .title {
