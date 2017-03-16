@@ -1,0 +1,22 @@
+<% if (components.length) { %>
+    <% components.forEach((component) => { %>
+    <section class="styleguide-block">
+        <header class="styleguide-block-header">
+            <h2 class="title" id="<%= component.config.name %>"><%= component.config.name %></h2>
+            <nav class="styleguide-shy styleguide-comma-list">
+            <% component.config.tag.forEach((tag, i, tags) => { %>
+                <a class="link" href="<%= root %>tag/<%= tag %>/index.html">
+                    <%= tag -%>
+                </a><% if (tags.length > 1 && i < (tags.length - 1) && i >= 0) { %>, <% } %>
+            <% }) %>
+            </nav>
+            <% if (component.config.hidePath !== true) { %>
+            <span class="styleguide-shy"><%= component.sourcePath %></span>
+            <% } %>
+        </header>
+        <div class="content"><%- component.html %></div>
+    </section>
+    <% }) %>
+<% } else { %>
+    <%- html %>
+<% } %>

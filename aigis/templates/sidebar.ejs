@@ -1,0 +1,11 @@
+<h2>Categories</h2>
+<nav class="categories styleguide-nav-categories">
+    <%- helper.renderCollectionTree('category') %>
+</nav>
+
+<h2>Tags</h2>
+<nav class="tags styleguide-nav-tags">
+<% config.collection.tag.forEach((tag) => { %>
+    <a class="link" href="<%= root %>tag/<%= tag %>/index.html"><%= tag %></a>
+<% }) %>
+</nav>

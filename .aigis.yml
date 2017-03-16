@@ -1,0 +1,9 @@
+source:
+    - build
+source_type: .css
+dest: ./styleguide
+dependencies:
+  - ./aigis/assets
+template_dir: ./aigis/templates
+template_engine: ejs
+color_palette: false

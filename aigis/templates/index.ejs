@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%= config.name %></title>
+    <link href="<%= root %>assets/css/highlight/duotone-dark.css" rel="stylesheet">
+    <link href="<%= root %>assets/css/styleguide.css" rel="stylesheet">
+    <link href="../<%= root %>build/styles.css" rel="stylesheet">
+</head>
+<body>
+    <aside class="styleguide-sidebar">
+        <%- include('./sidebar') %>
+    </aside>
+    <main class="styleguide-content">
+        <%- include('./components') %>
+    </main>
+    <footer class="styleguide-footer">Last update at <%= timestamp %></footer>
+</body>
+</html>
