@@ -7,15 +7,7 @@
    URL:           <%= url %>
    -------------------------------------------------------------------------- */
 
-// -----------------------------------------------------------------------------
-// The meta folder holds files which only have functions, mixins, variables and
-// other definitions which do NOT compile to CSS.
-// -----------------------------------------------------------------------------
 @import "meta";
-
-// -----------------------------------------------------------------------------
-// All styles from third party applications, frameworks and libraries.
-// -----------------------------------------------------------------------------
 
 // @see https://necolas.github.io/normalize.css/
 @import "./node_modules/normalize.css/normalize";
@@ -23,20 +15,6 @@
 // @see http://include-media.com/
 @import "./node_modules/include-media/dist/include-media";
 
-// -----------------------------------------------------------------------------
-// All styles which are used throughout the whole website get in here.
-// -----------------------------------------------------------------------------
 @import "shared";
-
-// -----------------------------------------------------------------------------
-// Components are parts which are used among several views. For example those
-// could be buttons, banners, lists, dialogs and so on.
-// -----------------------------------------------------------------------------
 @import "components";
-
-// -----------------------------------------------------------------------------
-// Everything that is not working in a component based approach will somewhen
-// end up as an exception. For example if you need to adjust stylings of a
-// component based on pages rather than on conditions then put it here.
-// -----------------------------------------------------------------------------
 @import "exceptions";
