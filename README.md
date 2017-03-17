@@ -2,7 +2,7 @@
 
 # Sass foundation
 
-This repository represents our starting point for creating CSS styles.
+This repository represents our starting point for creating CSS styles. Also comes with [Aigis] for generating a styleguide.
 
 Uses the following libraries by default:
 
@@ -18,3 +18,4 @@ Uses the following libraries by default:
 
 [normalize.css]: https://necolas.github.io/normalize.css/
 [include-media]: http://include-media.com/
+[Aigis]: ./aigis
