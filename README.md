@@ -9,6 +9,27 @@ Uses the following libraries by default:
 - [normalize.css]
 - [include-media]
 
+Have fun! ✌️
+
+## Build setup
+
+```bash
+# builds the css files
+npm run build
+
+# builds the css files in production mode (compressed)
+npm run build:prod
+
+# builds the styleguide
+npm run styleguide
+
+# watches the sass files for changes and builds them automatically
+npm run watch
+
+# tests if the sass files would build without errors
+npm run test
+```
+
 #  
 <p align="center">
   <a href="https://gridonic.ch">gridonic.ch</a> ・
