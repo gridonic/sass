@@ -5,7 +5,8 @@ category: components
 hidePath: true
 ---
 
-Components are parts which are used among several views. For example those
-could be buttons, banners, lists, dialogs and so on.
+Components ideally are pieces of CSS that are independent, detached,
+context unaware and as tiny as possible. A component may also be a composition
+of other components.
 */
 @import "components/first-component";
