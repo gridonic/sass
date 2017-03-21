@@ -1,61 +1,63 @@
 /*
 ---
-name: Debug
-category: debug
+name: Debugging styles
+category:
+    - debug
+    - debug/styles
 hidePath: true
 ---
 
-For visual and script debugging just run any url with `debug=1`, or type
-`:debug` or set a localStorage item called `debug` with a value of `1`.
-This will enable the debug mode and give you additional scripting output as
-well as visual debugging output like the current breakpoint and the
-vertical baseline grid.
-*/
-.debug-mode {
-    $highlight-color: $brand-warning;
-    $grid-color: $color-black;
+For visually debugging there are currently two classes that will help you.
+Place them on any element you like.
 
+- `debug-vertical-rhythm` (shows the vertical baseline grid)
+- `debug-breakpoints` (shows the currently active breakpoint)
+
+*/
+.debug-vertical-rhythm {
     position: relative;
 
-    &::after,
-    &::before {
-        z-index: $z-debug;
-    }
-
-    // Baseline grid
     &::after {
         background-color: transparent;
-        background-image: linear-gradient(transparent calc(100% - 1px), rgba($grid-color, 0.1) 0%),
-                          linear-gradient(transparent calc(50% - 1px), rgba($grid-color, 0.05) 50%, transparent calc(50% + 1px));
-        background-size: 100% $grid-vertical-base;
+        background-image: linear-gradient(transparent calc(100% - 1px), rgba(#000, 0.1) 0%),
+                          linear-gradient(transparent calc(100% - 1px), rgba(#fff, 0.1) 0%),
+                          linear-gradient(transparent calc(100% - 1px), rgba(#000, 0.1) 0%),
+                          linear-gradient(transparent calc(100% - 1px), rgba(#fff, 0.1) 0%);
         background-repeat: repeat, repeat;
+        background-size: 100% vertical-base(),
+                         100% vertical-base(),
+                         100% vertical-base(0.5),
+                         100% vertical-base(0.5);
         content: "";
-        height: 100%;
+        min-height: 100%;
         left: 0;
-        pointer-events: none;
         pointer-events: none;
         position: absolute;
         top: 0;
         width: 100%;
+        z-index: $z-debug;
     }
+}
 
-    // Breakpoints indicator
-    &::before {
-        background-color: $highlight-color;
+.debug-breakpoints {
+    position: relative;
+
+    &::after {
+        background-color: $brand-warning;
         bottom: 0;
         color: #000;
         font-family: monospace;
         font-size: 0.75rem;
-        line-height: $grid-vertical-base;
-        padding: ($grid-vertical-base / 2) 1rem;
+        line-height: vertical-base();
+        padding: vertical-base(0.5) 1rem;
         position: fixed;
         right: 0;
         white-space: pre-wrap;
+        z-index: $z-debug;
 
         @each $name, $width in $breakpoints {
             @include media(">=#{$width}") {
-                content: "vertical base: #{$grid-vertical-base}  ·  "
-                         "breakpoint: #{$name} (#{$width})";
+                content: "breakpoint: #{$name} (#{$width})";
             }
         }
     }
