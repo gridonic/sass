@@ -1,15 +1,10 @@
 @import "https://necolas.github.io/normalize.css/5.0.0/normalize.css";
+
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
     transition-duration: inherit;
     transition-property: none;
-}
-
-a {
-    color: currentColor;
-    display: inline-block;
 }
 
 sup a {
@@ -34,10 +29,6 @@ pre code {
 
 :root {
     background-color: #2a2734;
-    box-sizing: border-box;
-    font-family: sans-serif;
-    font-size: 16px;
-    line-height: 1.375;
     transition-duration: 330ms;
 }
 
