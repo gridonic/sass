@@ -3,7 +3,7 @@ source:
 source_type: .css
 dest: ./styleguide
 dependencies:
-  - ./aigis/assets
-template_dir: ./aigis/templates
+  - ./assets
+template_dir: ./templates
 template_engine: ejs
 color_palette: false

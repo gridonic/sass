@@ -6,7 +6,7 @@
   "scripts": {
     "build": "node-sass styles.scss build/styles.css",
     "build:prod": "npm run build -- --output-style compressed",
-    "styleguide": "npm run build && aigis run -c .aigis.yml",
+    "styleguide": "npm run build && aigis run -c aigis/config.yml",
     "watch": "npm run build -- --watch",
     "test": "npm run build && echo ✔︎  OK"
   },
