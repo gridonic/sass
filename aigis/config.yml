@@ -1,7 +1,7 @@
 source:
-    - build
+    - ../build
 source_type: .css
-dest: ./styleguide
+dest: ../styleguide
 dependencies:
   - ./assets
 template_dir: ./templates
