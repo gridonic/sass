@@ -10,7 +10,7 @@ variables and other definitions which do **not** compile to CSS.
 */
 @import "meta/functions";
 @import "meta/mixins";
-@import "meta/config";
 @import "meta/placeholders";
-@import "meta/colors";
+@import "meta/base";
 @import "meta/breakpoints";
+@import "meta/colors";

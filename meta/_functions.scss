@@ -10,3 +10,7 @@
 
     @return $result;
 }
+
+@function vertical-base($factor: 1) {
+    @return $font-text-line-height * $factor;
+}

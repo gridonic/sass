@@ -3,16 +3,18 @@
 name: Typography
 tag:
   - typography
+  - vertical-rhythm
 category:
   - shared
   - shared/typography
 ---
 
 The overall used font family is `#{$font-text-family}`. Headlines are
-having `#{$font-text-family}` as the main font family.
+having `#{$font-text-family}` as the main font family. The vertical
+base<sup>[1]</sup> unit is `#{vertical-base()}`.
 
 For your information the following `font-weight` values roughly correspond to
-the commonly used weight names below.<sup>[1]</sup>
+the commonly used weight names below.<sup>[2]</sup>
 
 ```
 100 - Thin
@@ -26,7 +28,8 @@ the commonly used weight names below.<sup>[1]</sup>
 900 - Black (Heavy)
 ```
 
-[1]: http://www.w3.org/TR/css3-fonts/#font-weight-prop
+[1]: https://zellwk.com/blog/why-vertical-rhythms/
+[2]: http://www.w3.org/TR/css3-fonts/#font-weight-prop
 */
 :root {
     font-size: 16px;
@@ -55,10 +58,11 @@ All `h{1..6}`-Tags are formatted and ready for usage. Use the `h{1..6}`
 classes if you need to style non headline markup as headlines.
 
 ```html
-<h1 class="h1">Headline The quick brown fox jumps over the lazy dog.</h1>
-<h2 class="h2">Jackdaws love my big sphinx of quartz.</h2>
-<h3 class="h3">Pack my box with five dozen liquor jugs.</h3>
+<h1 class="h1">The quick brown fox jumps over the lazy dog.</h1>
+<h2 class="h2">Pack my box with five dozen liquor jugs.</h2>
+<h3 class="h3">Jackdaws love my big sphinx of quartz.</h3>
 <h4 class="h4">Five quacking Zephyrs jolt my wax bed.</h4>
+<h5 class="h5">The five boxing wizards jump quickly.</h5>
 ```
 */
 h1, .h1,
@@ -75,22 +79,27 @@ h6, .h6 {
 
 h1, .h1 {
     font-size: 2.25rem;
+    line-height: vertical-base(2.5);
 }
 
 h2, .h2 {
     font-size: 2rem;
+    line-height: vertical-base(2);
 }
 
 h3, .h3 {
     font-size: 1.5rem;
+    line-height: vertical-base(1.5);
 }
 
 h4, .h4 {
     font-size: 1.25rem;
+    line-height: vertical-base(1.25);
 }
 
 h5, .h5 {
     font-size: 1.125rem;
+    line-height: vertical-base(1);
 }
 
 /*
@@ -107,8 +116,6 @@ category:
 Use `p`-Tags in order to create a paragraph.
 
 ```html
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio dolor,
-odio velit dolores hic quia, repellendus culpa itaque tenetur totam,
-nesciunt aliquam quas ut possimus! Nemo fuga distinctio qui. Magni!</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio dolor, odio velit dolores hic quia, repellendus culpa itaque tenetur totam, nesciunt aliquam quas ut possimus! Nemo fuga distinctio qui. Magni!</p>
 ```
 */
