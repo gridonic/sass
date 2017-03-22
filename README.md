@@ -27,7 +27,7 @@ npm run styleguide
 npm run watch
 
 # tests if the sass files would build without errors
-npm run test
+npm test
 ```
 
 #  
