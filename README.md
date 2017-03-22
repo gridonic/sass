@@ -9,6 +9,11 @@ Uses the following libraries by default:
 - [normalize.css]
 - [include-media]
 
+🙏 Obeys those principles:
+
+- [rscss] *with a [tiny extension]*
+- [vertical-rhythm]
+
 Have fun! ✌️
 
 ## Build setup
@@ -40,3 +45,6 @@ npm test
 [normalize.css]: https://necolas.github.io/normalize.css/
 [include-media]: http://include-media.com/
 [Aigis]: ./aigis
+[rscss]: http://rscss.io/
+[tiny extension]: ./src/_exceptions.scss
+[vertical-rhythm]: https://zellwk.com/blog/why-vertical-rhythms/
