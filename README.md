@@ -12,7 +12,8 @@ Uses the following libraries by default:
 🙏 Obeys those principles:
 
 - [rscss] *with a [tiny extension]*
-- [vertical-rhythm]
+- [Vertical Rhythm]
+- [Google Web Fundamentals]
 
 Have fun! ✌️
 
@@ -47,4 +48,5 @@ npm test
 [Aigis]: ./aigis
 [rscss]: http://rscss.io/
 [tiny extension]: ./src/_exceptions.scss
-[vertical-rhythm]: https://zellwk.com/blog/why-vertical-rhythms/
+[Vertical Rhythm]: https://zellwk.com/blog/why-vertical-rhythms/
+[Google Web Fundamentals]: https://developers.google.com/web/fundamentals
