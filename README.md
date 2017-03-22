@@ -1,4 +1,4 @@
-<p align="center"><img src="http://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg" alt="Sass" width="128"></p>
+<p align="center"><img src="https://gridonic.github.io/assets/images/logos/sass.svg" alt="Sass" width="128"></p>
 
 # Sass foundation
 
