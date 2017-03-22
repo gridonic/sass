@@ -1,4 +1,4 @@
-<p align="center"><img src="https://pxgrid.github.io/aigis/css/logo.svg" alt="Aigis" width="128"></p>
+<p align="center"><img src="https://gridonic.github.io/assets/images/logos/aigis.svg" alt="Aigis" width="128"></p>
 
 # Aigis styleguide generator
 
