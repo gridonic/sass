@@ -27,7 +27,9 @@
   "keywords": [
     "sass",
     "css",
-    "boilerplate"
+    "boilerplate",
+    "gridonic",
+    "foundation"
   ],
   "bugs": {
     "url": "https://github.com/gridonic/sass/issues"
