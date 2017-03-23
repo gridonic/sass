@@ -20,6 +20,9 @@ Have fun! ✌️
 ## Build setup
 
 ```bash
+# install dependencies
+yarn
+
 # builds the css files
 npm run build
 
