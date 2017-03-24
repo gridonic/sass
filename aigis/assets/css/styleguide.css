@@ -1,0 +1,181 @@
+@import "https://necolas.github.io/normalize.css/5.0.0/normalize.css";
+
+*,
+*::before,
+*::after {
+    transition-duration: inherit;
+    transition-property: none;
+}
+
+sup a {
+    color: #0af;
+    text-decoration: none;
+}
+
+sup + sup a {
+    margin-left: 2px;
+}
+
+sup a::before { content: "\5b"; }
+sup a::after { content: "\5d"; }
+
+pre code {
+    border-radius: 3px;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.125);
+    display: block;
+    overflow: scroll;
+    padding: 1rem;
+}
+
+:root {
+    background-color: #2a2734;
+    transition-duration: 330ms;
+}
+
+.styleguide-sidebar {
+    bottom: 3.375em;
+    color: #fefefe;
+    left: 0;
+    overflow: auto;
+    padding: 2em;
+    position: fixed;
+    top: 0;
+    width: 320px;
+}
+
+.styleguide-sidebar > .tags,
+.styleguide-sidebar > .categories {
+    margin: 1.5em 0 2em;
+}
+
+.styleguide-content {
+    background-color: #fefefe;
+    margin: 0 0 3.375em 320px;
+    padding: 2em;
+    width: calc(100% - 320px);
+}
+
+.styleguide-footer {
+    background-color: #2a2734;
+    bottom: 0;
+    color: #fefefe;
+    height: 3.375em;
+    left: 0;
+    padding: 1em 2em;
+    position: fixed;
+    width: 100%;
+}
+
+.styleguide-color {
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.25);
+    display: inline-block;
+    margin: 1em;
+    width: 28%;
+}
+
+.styleguide-color::before {
+    content: "";
+    display: block;
+    padding-top: 50%;
+}
+
+.styleguide-color::after {
+    background-color: #fefefe;
+    content: attr(title);
+    display: block;
+    margin: 1px;
+    padding: 0.5em 1em;
+}
+
+.styleguide-nav-tags {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.8125rem;
+}
+
+.styleguide-nav-tags > .link {
+    border-radius: 3px;
+    border: 1px solid #fefefe;
+    margin: 0 0.5em 0.5em 0;
+    padding: 4px 8px;
+    text-decoration: none;
+}
+
+.styleguide-nav-tags > .link:hover {
+    background-color: #fefefe;
+    color: #2a2734;
+}
+
+.styleguide-nav-categories a {
+    position: relative;
+    text-decoration: none;
+}
+
+.styleguide-nav-categories a::after {
+    content: "\25b6";
+    font-size: 0.5em;
+    margin-right: 0.5em;
+    opacity: 0;
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition-property: opacity, transform;
+}
+
+.styleguide-nav-categories a:hover::after {
+    opacity: 1;
+    transform: translate(0%, -50%);
+}
+
+.styleguide-nav-categories a::first-letter {
+    text-transform: uppercase;
+}
+
+.styleguide-nav-categories ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.styleguide-nav-categories ul ul {
+    margin-left: 1em;
+    margin-bottom: 0.5em;
+    opacity: 0.5;
+}
+
+.styleguide-block + .styleguide-block {
+    margin-top: 3em;
+}
+
+.styleguide-block-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+.styleguide-block-header > .title {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    margin-bottom: 0.25em;
+    padding-bottom: 0.5em;
+    width: 100%;
+}
+
+.styleguide-comma-list > .link:not(:hover) {
+    text-decoration: none;
+}
+
+.styleguide-shy {
+    font-size: 0.75rem;
+    opacity: 0.25;
+}
+
+.aigis-preview {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAAF0lEQVR4AWP4DwVvoWCgBGAMmMQACQAAuK72AWHjK4wAAAAASUVORK5CYII=');
+    background-size: 8px 8px;
+    border-radius: 3px;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.125);
+    margin: 0;
+    padding: 1rem;
+}

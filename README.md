@@ -1,13 +1,43 @@
-<p align="center"><img src="http://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg" alt="Sass" width="128"></p>
+<p align="center"><img src="https://gridonic.github.io/assets/images/logos/sass.svg" alt="Sass" width="128"></p>
 
 # Sass foundation
 
-This repository represents our starting point for creating CSS styles.
+This repository represents our starting point for creating CSS styles. Also comes with [Aigis] for generating a styleguide.
 
 Uses the following libraries by default:
 
 - [normalize.css]
 - [include-media]
+
+🙏 Obeys those principles:
+
+- [rscss] *with a [tiny extension]*
+- [Vertical Rhythm]
+- [Google Web Fundamentals]
+
+Have fun! ✌️
+
+## Build setup
+
+```bash
+# install dependencies
+yarn
+
+# builds the css files
+npm run build
+
+# builds the css files in production mode (compressed)
+npm run build:prod
+
+# builds the styleguide
+npm run styleguide
+
+# watches the sass files for changes and builds them automatically
+npm run watch
+
+# tests if the sass files would build without errors
+npm test
+```
 
 #  
 <p align="center">
@@ -18,3 +48,8 @@ Uses the following libraries by default:
 
 [normalize.css]: https://necolas.github.io/normalize.css/
 [include-media]: http://include-media.com/
+[Aigis]: ./aigis
+[rscss]: http://rscss.io/
+[tiny extension]: ./src/_exceptions.scss
+[Vertical Rhythm]: https://zellwk.com/blog/why-vertical-rhythms/
+[Google Web Fundamentals]: https://developers.google.com/web/fundamentals

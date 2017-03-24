@@ -1,0 +1,16 @@
+// -----------------------------------------------------------------------------
+// Define your global functions in here!
+// -----------------------------------------------------------------------------
+@function map-stringify($map) {
+    $result: null;
+
+    @each $key, $value in $map {
+        $result: append($result, "#{$key}: #{$value}", comma);
+    }
+
+    @return $result;
+}
+
+@function vertical-base($factor: 1) {
+    @return $font-text-line-height * $factor;
+}

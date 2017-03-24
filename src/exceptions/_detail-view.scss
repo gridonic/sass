@@ -1,0 +1,11 @@
+// Linting rules for exceptions won't be that strict as for components.
+// Therefore the styles below will mostly not raise any warnings or errors.
+.detail-view {
+    .my-component:hover {
+        .adjust-another-component {
+            height: 100%;
+            position: absolute;
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+source:
+    - ../build
+source_type: .css
+dest: ../styleguide
+dependencies:
+  - ./assets
+template_dir: ./templates
+template_engine: ejs
+color_palette: false

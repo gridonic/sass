@@ -1,0 +1,19 @@
+/*
+---
+name: Shared
+category: shared
+hidePath: true
+---
+
+Before creating components you most likely will have styles that are too
+generic in order to fit into a component or possibly will even be used by all
+of the components you create.
+
+This for example could be generic typographic definitions, debugging styles or
+basic print styles.
+*/
+@import "shared/debug";
+@import "shared/generic";
+@import "shared/typography";
+@import "shared/print";
+@import "shared/images";

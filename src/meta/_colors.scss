@@ -1,0 +1,41 @@
+$color-black: #000;
+$color-japanese-laurel: #06a20d;
+$color-cinnabar: #e43e33;
+$color-matisse: #0b6ba1;
+$color-white: #fff;
+$color-saffron: #fac135;
+
+$brand-primary: $color-black;
+$brand-success: $color-japanese-laurel;
+$brand-info: $color-matisse;
+$brand-warning: $color-cinnabar;
+$brand-text-primary: $brand-primary;
+
+/*
+---
+name: Colors
+tag:
+  - meta
+category:
+  - meta
+  - meta/colors
+---
+
+The following colors are the defined project colors.
+
+📢 Remember:
+
+- Do *not* create new ones, try to use them and *adjust* them via color
+manipulating functions.<sup>[1]</sup><sup>[2]</sup> This will be useful regarding theming.
+- Always use the semantic colors, *not* the actual color name!
+
+[1]: https://robots.thoughtbot.com/controlling-color-with-sass-color-functions
+[2]: http://jackiebalzer.com/color
+
+```html
+<span class="styleguide-color" style="background-color: #{$brand-primary}" title="brand-primary"></span>
+<span class="styleguide-color" style="background-color: #{$brand-success}" title="brand-success"></span>
+<span class="styleguide-color" style="background-color: #{$brand-info}" title="brand-info"></span>
+<span class="styleguide-color" style="background-color: #{$brand-warning}" title="brand-warning"></span>
+```
+*/

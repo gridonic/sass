@@ -1,0 +1,40 @@
+/*
+---
+name: Primary button
+tag:
+  - components
+  - buttons
+category:
+  - components
+  - components/buttons
+  - components/buttons/primary
+---
+
+The button with the strongest visual weight is the primary button. It’s the
+button that’s supposed to get the most attention.
+
+```html
+<button class="button-primary">Primary button</button>
+```
+*/
+.button-primary {
+    background: transparent;
+    border-radius: 3px;
+    border: 0;
+    box-shadow: 0 0 0 1px $brand-primary;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    padding: vertical-base(0.5) 1em;
+
+    &:hover {
+        background-color: $brand-primary;
+        color: invert($brand-primary);
+    }
+
+    @include media(">=medium") {
+        font-size: 1.25em;
+        line-height: vertical-base(1.5);
+    }
+}
