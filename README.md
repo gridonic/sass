@@ -9,11 +9,20 @@ Uses the following libraries by default:
 - [normalize.css]
 - [include-media]
 
+🙏 Obeys those principles:
+
+- [rscss] *with a [tiny extension]*
+- [Vertical Rhythm]
+- [Google Web Fundamentals]
+
 Have fun! ✌️
 
 ## Build setup
 
 ```bash
+# install dependencies
+yarn
+
 # builds the css files
 npm run build
 
@@ -40,3 +49,7 @@ npm test
 [normalize.css]: https://necolas.github.io/normalize.css/
 [include-media]: http://include-media.com/
 [Aigis]: ./aigis
+[rscss]: http://rscss.io/
+[tiny extension]: ./src/_exceptions.scss
+[Vertical Rhythm]: https://zellwk.com/blog/why-vertical-rhythms/
+[Google Web Fundamentals]: https://developers.google.com/web/fundamentals
