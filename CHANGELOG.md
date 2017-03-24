@@ -19,7 +19,7 @@ Lots of new features have been added. 👏
 
 First public release! 🎉
 
-[1.1.0]: https://github.com/gridonic/sass/compare/1.0.0...1.0.1
+[1.1.0]: https://github.com/gridonic/sass/compare/1.0.0...1.1.0
 
 [Aigis]: https://pxgrid.github.io/aigis/
 [rscss]: http://rscss.io/
