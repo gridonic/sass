@@ -1,5 +1,5 @@
 # [1.1.0]
-###### 2017-03-22
+###### 2017-03-24
 
 Lots of new features have been added. 👏
 
