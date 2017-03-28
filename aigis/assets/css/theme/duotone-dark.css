@@ -28,7 +28,7 @@ pre code {
 }
 
 :root {
-    background-color: #2a2734;
+    background-color: #222;
     transition-duration: 330ms;
 }
 
@@ -56,7 +56,7 @@ pre code {
 }
 
 .styleguide-footer {
-    background-color: #2a2734;
+    background-color: #222;
     bottom: 0;
     color: #fefefe;
     height: 3.375em;
@@ -103,7 +103,7 @@ pre code {
 
 .styleguide-nav-tags > .link:hover {
     background-color: #fefefe;
-    color: #2a2734;
+    color: #222;
 }
 
 .styleguide-nav-categories a {
