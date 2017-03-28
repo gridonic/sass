@@ -28,13 +28,12 @@ pre code {
 }
 
 :root {
-    background-color: #222;
     transition-duration: 330ms;
 }
 
 .styleguide-sidebar {
     bottom: 3.375em;
-    color: #fefefe;
+    color: #000;
     left: 0;
     overflow: auto;
     padding: 2em;
@@ -49,16 +48,14 @@ pre code {
 }
 
 .styleguide-content {
-    background-color: #fefefe;
     margin: 0 0 3.375em 320px;
     padding: 2em;
     width: calc(100% - 320px);
 }
 
 .styleguide-footer {
-    background-color: #222;
     bottom: 0;
-    color: #fefefe;
+    color: #000;
     height: 3.375em;
     left: 0;
     padding: 1em 2em;
@@ -95,15 +92,10 @@ pre code {
 
 .styleguide-nav-tags > .link {
     border-radius: 3px;
-    border: 1px solid #fefefe;
+    border: 1px solid #000;
     margin: 0 0.5em 0.5em 0;
     padding: 4px 8px;
     text-decoration: none;
-}
-
-.styleguide-nav-tags > .link:hover {
-    background-color: #fefefe;
-    color: #222;
 }
 
 .styleguide-nav-categories a {

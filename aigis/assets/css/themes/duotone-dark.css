@@ -1,0 +1,26 @@
+:root {
+    background-color: #2a2734;
+}
+
+.styleguide-sidebar {
+    color: #fefefe;
+}
+
+
+.styleguide-content {
+    background-color: #fefefe;
+}
+
+.styleguide-footer {
+    background-color: #2a2734;
+    color: #fefefe;
+}
+
+.styleguide-nav-tags > .link {
+    border-color: #fefefe;
+}
+
+.styleguide-nav-tags > .link:hover {
+    background-color: #fefefe;
+    color: #2a2734;
+}
