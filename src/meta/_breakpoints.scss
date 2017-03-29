@@ -29,7 +29,7 @@ Resolution relative settings. Excerpt from Google web fundamentals:<sup>[1]</sup
 Currently defined breakpoints:
 
 ```json
-#{stringify((input: $breakpoints, separator: "\a"))}
+#{stringify($breakpoints, (separator: "\a"))}
 ```
 
 [1]: https://developers.google.com/web/fundamentals/design-and-ui/responsive/#how-to-choose-breakpoints
