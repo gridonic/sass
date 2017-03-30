@@ -2,11 +2,12 @@
   "name": "@gridonic/sass",
   "version": "1.1.0",
   "description": "Our Sass foundation.",
-  "main": "src/styles.scss",
+  "main": "./src/styles.scss",
   "scripts": {
-    "build": "node-sass src/styles.scss build/styles.css",
+    "build": "node-sass ./src/styles.scss ./build/styles.css",
     "build:prod": "npm run build -- --output-style compressed",
-    "styleguide": "npm run build && aigis run -c aigis/config.yml",
+    "styleguide": "npm run build && aigis run -c ./aigis/config.yml",
+    "docs": "npm run build && sassdoc ./src -d ./docs -v",
     "watch": "npm run build -- --watch",
     "test": "npm run build && echo ✔︎  OK"
   },
@@ -14,7 +15,8 @@
   "license": "MIT",
   "devDependencies": {
     "node-aigis": "^1.4.0",
-    "node-sass": "^4.5.0"
+    "node-sass": "^4.5.0",
+    "sassdoc": "^2.2.2"
   },
   "dependencies": {
     "include-media": "^1.4.9",
