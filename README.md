@@ -2,7 +2,7 @@
 
 # Sass foundation
 
-This repository represents our starting point for creating CSS styles. Also comes with [Aigis] for generating a styleguide.
+This repository represents our starting point for creating CSS styles. It also comes with [Aigis] and [SassDoc] for generating a styleguide and a code documentation.
 
 Uses the following libraries by default:
 
@@ -32,6 +32,9 @@ npm run build:prod
 # builds the styleguide
 npm run styleguide
 
+# builds the code documentation
+npm run docs
+
 # watches the sass files for changes and builds them automatically
 npm run watch
 
@@ -53,3 +56,4 @@ npm test
 [tiny extension]: ./src/_exceptions.scss
 [Vertical Rhythm]: https://zellwk.com/blog/why-vertical-rhythms/
 [Google Web Fundamentals]: https://developers.google.com/web/fundamentals
+[SassDoc]: http://sassdoc.com/
