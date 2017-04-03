@@ -1,5 +1,7 @@
 <% if (Array.isArray(components)) { %>
     <% components.forEach((component) => { %>
+    <% sourcePath = component.config.sourcePath !== undefined ? component.config.sourcePath : component.sourcePath %>
+
     <section class="styleguide-block">
         <header class="styleguide-block-header">
             <h2 class="title" id="<%= component.config.name %>"><%= component.config.name %></h2>
@@ -10,9 +12,7 @@
                 </a><% if (tags.length > 1 && i < (tags.length - 1) && i >= 0) { %>, <% } %>
             <% }) %>
             </nav>
-            <% if (component.config.hidePath !== true) { %>
-            <span class="styleguide-shy"><%= component.sourcePath %></span>
-            <% } %>
+            <span class="styleguide-shy styleguide-sourcepath"><%= sourcePath %></span>
         </header>
         <div class="content">
             <%- component.html %>
@@ -22,7 +22,10 @@
             <% } %>
         </div>
     </section>
+
     <% }) %>
 <% } else { %>
+
+
     <%- html %>
 <% } %>
