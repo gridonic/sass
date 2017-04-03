@@ -1,0 +1,23 @@
+.styleguide-sidebar {
+    background-color: #fbfafa;
+    border-right: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.styleguide-content {
+    background-color: #fefefe;
+}
+
+.styleguide-footer {
+    background-color: #fbfafa;
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.styleguide-nav-tags > .link {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.styleguide-nav-tags > .link:hover {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.125);
+}

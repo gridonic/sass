@@ -16,6 +16,7 @@ tag:
 category:
   - meta
   - meta/breakpoints
+sourcePath: /meta/_breakpoints.scss
 ---
 
 Resolution relative settings. Excerpt from Google web fundamentals:<sup>[1]</sup>
@@ -29,7 +30,7 @@ Resolution relative settings. Excerpt from Google web fundamentals:<sup>[1]</sup
 Currently defined breakpoints:
 
 ```json
-#{map-stringify($breakpoints)}
+#{stringify($breakpoints, (separator: "\a"))}
 ```
 
 [1]: https://developers.google.com/web/fundamentals/design-and-ui/responsive/#how-to-choose-breakpoints

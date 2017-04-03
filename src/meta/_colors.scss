@@ -5,12 +5,6 @@ $color-matisse: #0b6ba1;
 $color-white: #fff;
 $color-saffron: #fac135;
 
-$brand-primary: $color-black;
-$brand-success: $color-japanese-laurel;
-$brand-info: $color-matisse;
-$brand-warning: $color-cinnabar;
-$brand-text-primary: $brand-primary;
-
 /*
 ---
 name: Colors
@@ -19,6 +13,15 @@ tag:
 category:
   - meta
   - meta/colors
+template: colors
+sourcePath: /meta/_colors.scss
+colors:
+    black: "#000"
+    japanese-laurel: "#06a20d"
+    cinnabar: "#e43e33"
+    matisse: "#0b6ba1"
+    white: "#fff"
+    saffron: "#fac135"
 ---
 
 The following colors are the defined project colors.
@@ -27,15 +30,9 @@ The following colors are the defined project colors.
 
 - Do *not* create new ones, try to use them and *adjust* them via color
 manipulating functions.<sup>[1]</sup><sup>[2]</sup> This will be useful regarding theming.
-- Always use the semantic colors, *not* the actual color name!
+- *Always* use colors [names](http://chir.ag/projects/name-that-color) wherever you can.<sup>[3]</sup>
 
 [1]: https://robots.thoughtbot.com/controlling-color-with-sass-color-functions
 [2]: http://jackiebalzer.com/color
-
-```html
-<span class="styleguide-color" style="background-color: #{$brand-primary}" title="brand-primary"></span>
-<span class="styleguide-color" style="background-color: #{$brand-success}" title="brand-success"></span>
-<span class="styleguide-color" style="background-color: #{$brand-info}" title="brand-info"></span>
-<span class="styleguide-color" style="background-color: #{$brand-warning}" title="brand-warning"></span>
-```
+[3]: https://davidwalsh.name/sass-color-variables-dont-suck
 */
