@@ -4,7 +4,7 @@
   "description": "Our Sass foundation.",
   "main": "./src/styles.scss",
   "scripts": {
-    "build": "node-sass ./src/styles.scss ./build/styles.css",
+    "build": "node-sass ./src -o ./build",
     "build:prod": "npm run build -- --output-style compressed",
     "styleguide": "npm run build && aigis run -c ./aigis/config.yml",
     "docs": "npm run build && sassdoc ./src -d ./docs -v",
