@@ -1,4 +1,4 @@
-<% if (components.length) { %>
+<% if (Array.isArray(components)) { %>
     <% components.forEach((component) => { %>
     <section class="styleguide-block">
         <header class="styleguide-block-header">
@@ -14,7 +14,13 @@
             <span class="styleguide-shy"><%= component.sourcePath %></span>
             <% } %>
         </header>
-        <div class="content"><%- component.html %></div>
+        <div class="content">
+            <%- component.html %>
+
+            <% if (component.config.template) { %>
+                <%- include(`./${component.config.template}`, { colors: component.config.colors }) %>
+            <% } %>
+        </div>
     </section>
     <% }) %>
 <% } else { %>

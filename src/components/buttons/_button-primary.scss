@@ -21,7 +21,7 @@ button that’s supposed to get the most attention.
     background: transparent;
     border-radius: 3px;
     border: 0;
-    box-shadow: 0 0 0 1px $brand-primary;
+    box-shadow: 0 0 0 1px $color-black;
     cursor: pointer;
     font-family: inherit;
     font-size: inherit;
@@ -29,8 +29,8 @@ button that’s supposed to get the most attention.
     padding: vertical-base(0.5) 1em;
 
     &:hover {
-        background-color: $brand-primary;
-        color: invert($brand-primary);
+        background-color: $color-black;
+        color: invert($color-black);
     }
 
     @include media(">=medium") {
