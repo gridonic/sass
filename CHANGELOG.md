@@ -1,14 +1,18 @@
 # [1.2.0]
-###### 2017-??-??
+###### 2017-04-03
 
 ###### Added
 - [SassDoc] for generating a code documentation
 - Duotone Light/Dark [Code-Highlight Theme](./aigis/assets/css/highlight) and [Aigis Theme](./aigis/assets/css/themes)
+- Possibility to define custom sourcePath in styleguide components
 
 ###### Changed
 - Rename `map-stringify()` to `stringify()`
 - Improve [`stringify()`](./src/meta/_functions.scss) to accept custom separator and patterns
 - Dropping double variable color system in favor of a single one ([#1])
+
+###### Fixed
+- Build all `*.scss` files, not just `styles.scss`
 
 # [1.1.0]
 ###### 2017-03-24
