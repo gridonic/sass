@@ -1,6 +1,6 @@
 {
   "name": "@gridonic/sass",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Our Sass foundation.",
   "main": "./src/styles.scss",
   "scripts": {
@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "include-media": "^1.4.9",
-    "normalize.css": "^5.0.0"
+    "normalize.css": "^6.0.0"
   },
   "repository": {
     "type": "git",

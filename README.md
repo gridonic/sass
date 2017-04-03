@@ -2,7 +2,7 @@
 
 # Sass foundation
 
-This repository represents our starting point for creating CSS styles. It also comes with [Aigis] and [SassDoc] for generating a styleguide and a code documentation.
+This repository represents our starting point for creating CSS styles. Comes with [Aigis] and [SassDoc] for generating a styleguide and a code documentation.
 
 Uses the following libraries by default:
 

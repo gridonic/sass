@@ -1,10 +1,12 @@
-@import "https://necolas.github.io/normalize.css/5.0.0/normalize.css";
-
 *,
 *::before,
 *::after {
     transition-duration: inherit;
     transition-property: none;
+}
+
+body {
+    margin: 0;
 }
 
 sup a {
