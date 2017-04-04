@@ -10,9 +10,13 @@ category:
 sourcePath: /shared/_typography.scss
 ---
 
-The overall used font family is `#{$font-text-family}`. Headlines are
-having `#{$font-text-family}` as the main font family. The vertical
-base<sup>[1]</sup> unit is `#{vertical-base()}`.
+The base font family is `#{$base-font-family}` and the base font-size is
+`#{$base-font-size}`. The base line-height, which is also the vertical
+base<sup>[1]</sup> unit, is `#{$base-line-height}`.
+
+The best way to implement a responsive typography is by adjusting the
+`font-size` within the `:root` element. This will also make sure that the
+vertical rhythm adapts to the new font-size.
 
 For your information the following `font-weight` values roughly correspond to
 the commonly used weight names below.<sup>[2]</sup>
@@ -33,15 +37,18 @@ the commonly used weight names below.<sup>[2]</sup>
 [2]: http://www.w3.org/TR/css3-fonts/#font-weight-prop
 */
 :root {
-    font-size: 16px;
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+
+    // Use responsive typography and adjust vertical rhythm at the same time
+    // @include media(">=medium") {
+    //     font-size: $base-font-size * 1.25;
+    // }
 }
 
 body {
     color: $color-black;
-    font-family: $font-text-family;
-    font-size: $font-text-size;
-    line-height: $font-text-line-height;
-    text-rendering: $font-text-rendering;
+    line-height: vertical-base();
 }
 
 /*
@@ -56,8 +63,9 @@ category:
 sourcePath: /shared/_typography.scss
 ---
 
-All `h{1..6}`-Tags are formatted and ready for usage. Use the `h{1..6}`
-classes if you need to style non headline markup as headlines.
+The font-family for headlines is `#{$base-headline-family}`. All `h{1..6}`-Tags
+are formatted and ready for usage. Use the `h{1..6}` classes if you need to
+style non-headline markup as headlines.
 
 ```html
 <h1 class="h1">The quick brown fox jumps over the lazy dog.</h1>
@@ -73,10 +81,11 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-    font-family: $font-headline-family;
+    font-family: $base-headline-family;
     font-weight: normal;
     margin-bottom: 0;
     margin-top: 0;
+    text-rendering: $base-headline-rendering;
 }
 
 h1, .h1 {
