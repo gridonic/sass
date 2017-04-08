@@ -4,7 +4,7 @@
   "description": "Our Sass foundation.",
   "main": "./src/styles.scss",
   "scripts": {
-    "build": "node-sass ./src -o ./build",
+    "build": "node-sass ./src -o ./build --importer ./node_modules/node-sass-glob",
     "build:prod": "npm run build -- --output-style compressed",
     "styleguide": "npm run build && aigis run -c ./aigis/config.yml",
     "docs": "npm run build && sassdoc ./src -d ./docs -v",
@@ -16,6 +16,7 @@
   "devDependencies": {
     "node-aigis": "^1.4.0",
     "node-sass": "^4.5.0",
+    "node-sass-glob": "^1.0.4",
     "sassdoc": "^2.2.2"
   },
   "dependencies": {

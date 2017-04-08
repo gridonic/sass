@@ -1602,6 +1602,12 @@ node-gyp@^3.3.1:
     tar "^2.0.0"
     which "1"
 
+node-sass-glob@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/node-sass-glob/-/node-sass-glob-1.0.4.tgz#e3bb7b1e0f48dbcca626a9f028e877bbfd936e48"
+  dependencies:
+    glob "^7.0.3"
+
 node-sass@^4.5.0:
   version "4.5.1"
   resolved "https://registry.yarnpkg.com/node-sass/-/node-sass-4.5.1.tgz#e8e119fe3c8213ad7e56ca618dd231e9e8b30f5b"

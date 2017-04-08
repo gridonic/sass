@@ -1,3 +1,9 @@
+# [Unreleased]
+###### 2017-04-??
+
+###### Added
+- Custom Sass importer ([node-sass-glob]) which supports [globbing] 😎
+
 # [1.2.0]
 ###### 2017-04-03
 
@@ -35,6 +41,7 @@ Lots of new features have been added. 👏
 
 First public release! 🎉
 
+[Unreleased]: https://github.com/gridonic/sass/compare/1.2.0...HEAD
 [1.2.0]: https://github.com/gridonic/sass/compare/1.1.0...1.2.0
 [1.1.0]: https://github.com/gridonic/sass/compare/1.0.0...1.1.0
 
@@ -45,3 +52,5 @@ First public release! 🎉
 [Vertical Rhythm]: https://zellwk.com/blog/why-vertical-rhythms/
 [foundations]: https://github.com/search?q=topic%3Afoundation+org%3Agridonic&type=Repositories
 [SassDoc]: http://sassdoc.com/
+[globbing]: https://github.com/isaacs/node-glob
+[node-sass-glob]: https://github.com/Jam3/node-sass-glob
