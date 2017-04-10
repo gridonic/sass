@@ -3,6 +3,20 @@
 
 ###### Added
 - Custom Sass importer ([node-sass-glob]) which supports [globbing] 😎
+- Aigis `insert` parameter and improve `config.yml` documentation
+- [Globbing](./src/components/_buttons.scss#L18) example in button group
+- [Example](./src/shared/_typography.scss#L43) for responsive typography
+
+###### Changed
+- Improve debugging styles and documentation
+- Improve default link [`text-decoration`](./src/shared/_base.scss#L17) styles
+- Improve typography documentation
+- Rename all `$font-*` variables to `$base-*`
+- Rename `shared/generic` to `shared/base` for consistency reasons
+- Move `z-index` variables into own file ([`_z.scss`](./src/meta/_z.scss))
+
+###### Fixed
+- `$base-font-size` not being used properly
 
 # [1.2.0]
 ###### 2017-04-03
