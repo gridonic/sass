@@ -17,15 +17,27 @@
         <div class="content">
             <%- component.html %>
 
+            <% if (component.config.insert) { %>
+                <%-
+                    include('./insert', {
+                        config,
+                        insert: component.config.insert,
+                        sourcePath
+                    })
+                %>
+            <% } %>
+
             <% if (component.config.template) { %>
-                <%- include(`./${component.config.template}`, { colors: component.config.colors }) %>
+                <%-
+                    include(`./${component.config.template}`, {
+                        component
+                    })
+                %>
             <% } %>
         </div>
     </section>
 
     <% }) %>
 <% } else { %>
-
-
     <%- html %>
 <% } %>
