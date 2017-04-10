@@ -15,5 +15,4 @@ button group for example. In order to keep the overall structure clear and
 simple, please put *similar* components – in terms of files and documentation –
 into the *same* group.
 */
-@import "buttons/button-plain";
-@import "buttons/button-primary";
+@import "buttons/*";
