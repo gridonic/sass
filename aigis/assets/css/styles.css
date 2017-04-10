@@ -29,6 +29,14 @@ pre code {
     padding: 1rem;
 }
 
+:not(pre) > code:not([class*="language-"]) {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.065);
+    padding: 1px 3px;
+    font-size: 0.9375rem;
+}
+
 :root {
     transition-duration: 330ms;
 }
