@@ -24,8 +24,12 @@ template_engine: ejs
 # Generates a color palette page which has all colors that are used in your project.
 color_palette: false
 
-# Specify enabling or disabling syntax highlighting for the code block.
-# highlight: false
+# Enable or disable internal syntax highlighting. For flexibility reasons
+# (custom syntax highlighter) this is disabled by default.
+highlight: false
+
+# Adjust codeblock prefix. Default: language-
+lang_prefix: ''
 
 # Specify class name of the preview area.
 preview_class: styleguide-preview
