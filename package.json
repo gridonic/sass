@@ -32,7 +32,14 @@
     "css",
     "boilerplate",
     "gridonic",
-    "foundation"
+    "foundation",
+    "styleguide",
+    "styleguide-generator",
+    "documentation",
+    "documentation-generator",
+    "sassdoc",
+    "aigis",
+    "rscss"
   ],
   "bugs": {
     "url": "https://github.com/gridonic/sass/issues"
