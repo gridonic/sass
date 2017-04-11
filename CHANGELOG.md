@@ -4,6 +4,7 @@
 ###### Added
 - Custom Sass importer ([node-sass-glob]) which supports [globbing] 😎
 - Aigis `insert` parameter and improve `config.yml` documentation
+- Aigis `github` and `arta` syntax [highlighting](./aigis/assets/css/highlight) themes
 - [Globbing](./src/components/_buttons.scss#L18) example in button group
 - [Example](./src/shared/_typography.scss#L43) for responsive typography
 
@@ -14,6 +15,7 @@
 - Rename all `$font-*` variables to `$base-*`
 - Rename `shared/generic` to `shared/base` for consistency reasons
 - Move `z-index` variables into own file ([`_z.scss`](./src/meta/_z.scss))
+- Default syntax highlighter for Aigis to [highlight.js]
 
 ###### Fixed
 - `$base-font-size` not being used properly
@@ -68,3 +70,4 @@ First public release! 🎉
 [SassDoc]: http://sassdoc.com/
 [globbing]: https://github.com/isaacs/node-glob
 [node-sass-glob]: https://github.com/Jam3/node-sass-glob
+[highlight.js]: https://highlightjs.org/
