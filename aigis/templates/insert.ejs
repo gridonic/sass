@@ -13,5 +13,5 @@
 
 <% if (insert.source || (Array.isArray(insert) && insert.indexOf('source') > -1)) { %>
     <% source = typeof insert.source === 'string' ? insert.source : file.source %>
-    <pre><code class="language-<%= config.insert.source.language %>"><%= include(source) %></code></pre>
+    <pre><code class="<%= config.lang_prefix %><%= config.insert.source.language %>"><%= include(source) %></code></pre>
 <% } %>
