@@ -204,3 +204,21 @@ pre code {
     margin: 0;
     padding: 1rem;
 }
+
+:not(.styleguide-preview) > table {
+    border-collapse: collapse;
+}
+
+:not(.styleguide-preview) > table tr {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+:not(.styleguide-preview) > table thead tr {
+    border-width: 2px;
+}
+
+:not(.styleguide-preview) > table thead th,
+:not(.styleguide-preview) > table tbody td {
+    padding: 0.5em 2em 0.5em 0.5em;
+    text-align: left;
+}
