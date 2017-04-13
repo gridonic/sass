@@ -2,6 +2,7 @@
 ###### 2017-04-??
 
 ###### Added
+- [Gemini] for visual regression testing 👏
 - Custom Sass importer ([node-sass-glob]) which supports [globbing] 😎
 - Aigis `insert` parameter and improve `config.yml` documentation
 - Aigis `github` and `arta` syntax [highlighting](./aigis/assets/css/highlight) themes
@@ -71,3 +72,4 @@ First public release! 🎉
 [globbing]: https://github.com/isaacs/node-glob
 [node-sass-glob]: https://github.com/Jam3/node-sass-glob
 [highlight.js]: https://highlightjs.org/
+[Gemini]: https://github.com/gemini-testing/gemini

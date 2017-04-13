@@ -1,0 +1,27 @@
+# @see https://gemini-testing.github.io/doc/config.html
+
+# The root URL of your website. Target URLs of your test suites will be
+# resolved relatively to it.
+rootUrl: http://localhost/gridonic/sass/styleguide/
+
+# These settings specify the configuration of each browser used for tests.
+# @see https://gemini-testing.github.io/doc/config.html#browsers-settings
+browsers:
+  chrome:
+    desiredCapabilities:
+      browserName: chrome
+
+# There is a system section in the config file, which contains global gemini
+# settings. These settings can not be set per-browser.
+# @see https://gemini-testing.github.io/doc/config.html#system-settings
+system:
+  projectRoot: ../
+
+# You can link some set of tests with certain browsers using sets.
+# @see https://gemini-testing.github.io/doc/config.html#sets
+sets:
+  chrome:
+    files:
+     - tests/**/*.js
+    browsers:
+     - chrome

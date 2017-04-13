@@ -7,19 +7,26 @@
     "build": "node-sass ./src -o ./build --importer ./node_modules/node-sass-glob",
     "build:prod": "npm run build -- --output-style compressed",
     "docs": "sassdoc ./src -d ./docs -v",
+    "postinstall": "selenium-standalone install",
     "predocs": "npm run build",
     "prestyleguide": "npm run build",
+    "pretest": "npm run build",
     "styleguide": "aigis run -c ./aigis/config.yml",
-    "test": "npm run build && echo ✔︎  OK",
+    "test": "./bin/gemini test",
+    "test:update": "./bin/gemini update",
     "watch": "npm run build -- --watch"
   },
   "author": "Gridonic <hello@gridonic.ch>",
   "license": "MIT",
   "devDependencies": {
+    "concurrently": "^3.4.0",
+    "gemini": "^4.18.1",
     "node-aigis": "^1.4.0",
-    "node-sass": "^4.5.0",
+    "node-sass": "^4.5.2",
     "node-sass-glob": "^1.0.4",
-    "sassdoc": "^2.2.2"
+    "sassdoc": "^2.2.2",
+    "selenium-standalone": "^6.2.0",
+    "wait-on": "^2.0.2"
   },
   "dependencies": {
     "include-media": "^1.4.9",

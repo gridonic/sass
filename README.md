@@ -2,9 +2,15 @@
 
 # Sass foundation
 
-This repository represents our starting point for creating CSS styles. Comes with [Aigis] and [SassDoc] for generating a styleguide and a code documentation.
+This repository represents our starting point for creating *sane*, *scalable* and *maintainable* CSS.
 
-Uses the following libraries by default:
+💪🏻 It’s empowered by:
+
+- [Aigis] *(styleguide generator)*
+- [SassDoc] *(code documentation)*
+- [Gemini] *(utility for visual regression testing)*
+
+📚 Uses the following libraries by default:
 
 - [normalize.css]
 - [include-media]
@@ -24,23 +30,25 @@ Have fun! ✌️
 yarn
 
 # builds the css files
-npm run build
+yarn build
 
 # builds the css files in production mode (compressed)
-npm run build:prod
+yarn build:prod
 
-# builds the styleguide
-npm run styleguide
+# generates the styleguide
+yarn styleguide
 
-# builds the code documentation
-npm run docs
+# generates the code documentation
+yarn docs
 
 # watches the sass files for changes and builds them automatically
-npm run watch
+yarn watch
 
-# tests if the sass files would build without errors
-npm test
+# run visual regression tests
+yarn test
 ```
+
+*Note:* You can replace `yarn` with `npm run` if you don’t want to use yarn. ¯\\\_(ツ)\_/¯
 
 #  
 <p align="center">
@@ -57,3 +65,4 @@ npm test
 [Vertical Rhythm]: https://zellwk.com/blog/why-vertical-rhythms/
 [Google Web Fundamentals]: https://developers.google.com/web/fundamentals
 [SassDoc]: http://sassdoc.com/
+[Gemini]: https://github.com/gemini-testing/gemini
