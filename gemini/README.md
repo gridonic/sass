@@ -38,6 +38,23 @@ yarn test
 yarn test:update
 ```
 
+*Note:* All commands above internally use the [`./bin/gemini`](../bin/gemini) bash script. Every parameter you add to those scripts will be passed directly to the real Gemini binary.
+
+For example:
+
+```bash
+# run tests with different root url
+yarn test -- --root-url http://example.com
+
+# what version of gemini am i using?
+yarn test -- --version # 3.4.0
+
+# only run tests belonging to the buttons group
+yarn test -- --grep /buttons/
+```
+
+ℹ️ See [Gemini commands] and [Gemini configuration#Overriding settings]
+
 #  
 <p align="center">
   <a href="https://gridonic.ch">gridonic.ch</a> ・
@@ -51,3 +68,5 @@ yarn test:update
 [Internet Explorer]: https://www.microsoft.com/en-us/download/internet-explorer.aspx#
 [Opera]: https://www.opera.com/
 [official documentation]: https://gemini-testing.github.io/
+[Gemini commands]: https://gemini-testing.github.io/doc/commands.html
+[Gemini configuration#Overriding settings]: https://gemini-testing.github.io/doc/config.html#overriding-settings
