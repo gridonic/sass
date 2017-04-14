@@ -1,6 +1,6 @@
 # Gemini
 
-We are using [Gemini] for visual regression testing to avoid bugs and minimize unintended side-effects caused by refactoring/ adjustments of code.
+We are using [Gemini] for visual regression testing to avoid bugs and minimize unintended side-effects caused by refactoring/adjustments of code.
 
 > [Gemini] allows you to:
 > - Test with different browsers at the same time:
@@ -46,14 +46,15 @@ For example:
 # run tests with different root url
 yarn test -- --root-url http://example.com
 
-# what version of gemini am i using?
-yarn test -- --version # 3.4.0
+# produce an html file with reference image, current image and differences
+# between them, for each state in each browser.
+yarn test -- --reporter html
 
 # only run tests belonging to the buttons group
 yarn test -- --grep /buttons/
 ```
 
-ℹ️ See [Gemini commands] and [Gemini configuration#Overriding settings]
+ℹ️ See [Gemini commands] and [Gemini configuration#Overriding settings] for additional information and instructions.
 
 #  
 <p align="center">
