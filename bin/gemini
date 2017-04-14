@@ -8,4 +8,4 @@ concurrently \
     -s first \
     -n "Selenium,Gemini" \
     "selenium-standalone start 2> /dev/null" \
-    "wait-on tcp:4444 && gemini --config ./gemini/config.yml --reporter flat $@"
+    "wait-on tcp:4444 && gemini --config ./gemini/config.yml --reporter flat $*"
