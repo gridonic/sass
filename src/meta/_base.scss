@@ -1,15 +1,15 @@
 // Base font family.
-$base-font-family: sans-serif;
+$base-font-family: sans-serif !default;
 
 // Base font size. Will be used in :root as font-size.
-$base-font-size: 16px;
+$base-font-size: 16px !default;
 
 // Base headline font family.
-$base-headline-family: sans-serif;
+$base-headline-family: sans-serif !default;
 
 // Base headline text rendering.
 // @see https://developer.mozilla.org/en/docs/Web/CSS/text-rendering
-$base-headline-rendering: optimizeLegibility;
+$base-headline-rendering: optimizeLegibility !default;
 
 // Base line-height, also represents the vertical-base unit.
-$base-line-height: 1.375rem;
+$base-line-height: 1.375rem !default;
