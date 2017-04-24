@@ -4,7 +4,7 @@
 
 This repository represents our starting point for creating *sane*, *scalable* and *maintainable* CSS.
 
-💪🏻 It’s empowered by:
+💪 It’s empowered by:
 
 - [Aigis] *(styleguide generator)*
 - [SassDoc] *(code documentation)*
@@ -22,6 +22,12 @@ This repository represents our starting point for creating *sane*, *scalable* an
 - [Google Web Fundamentals]
 
 Have fun! ✌️
+
+## Wait, how am I supposed to use it?
+
+**Primarily** it’s meant to be [downloaded], extracted and used as a starting point that will grow/adjust from time to time while you work with it.
+
+ℹ️ Meanwhile see the wiki for additional [recipes] on how to use this foundation.
 
 ## Build setup
 
@@ -64,3 +70,5 @@ npm run test
 [Google Web Fundamentals]: https://developers.google.com/web/fundamentals
 [SassDoc]: http://sassdoc.com/
 [Gemini]: https://github.com/gemini-testing/gemini
+[downloaded]: https://github.com/gridonic/sass/releases/latest
+[recipes]: https://github.com/gridonic/sass/wiki/Recipes
