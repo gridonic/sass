@@ -4,7 +4,7 @@
   "description": "Our Sass foundation.",
   "main": "./src/styles.scss",
   "scripts": {
-    "build": "node-sass ./src -o ./build --importer ./node_modules/node-sass-glob",
+    "build": "node-sass ./src -o ./build --importer ./node_modules/node-sass-magic-importer/dist/cli.js",
     "build:prod": "npm run build -- --output-style compressed",
     "docs": "sassdoc ./src -d ./docs -v",
     "postinstall": "selenium-standalone install",
@@ -23,7 +23,7 @@
     "gemini": "^4.18.1",
     "node-aigis": "^1.4.0",
     "node-sass": "^4.5.2",
-    "node-sass-glob": "^1.0.4",
+    "node-sass-magic-importer": "^4.1.4",
     "sassdoc": "^2.2.2",
     "selenium-standalone": "^6.2.0",
     "wait-on": "^2.0.2"

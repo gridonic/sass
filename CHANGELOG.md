@@ -3,7 +3,11 @@
 
 ###### Added
 - [Gemini] for visual regression testing 👏
-- Custom Sass importer ([node-sass-glob]) which supports [globbing] 😎
+- Custom Sass importer [node-sass-magic-importer] 💪 which supports:
+    - [Selector filtering]
+    - [Node filtering]
+    - [Module importing]
+    - [Globbing]
 - Aigis `insert` parameter and improve `config.yml` documentation
 - Aigis `github` and `arta` syntax [highlighting](./aigis/assets/css/highlight) themes
 - [Globbing](./src/components/_buttons.scss#L18) example in button group
@@ -69,7 +73,10 @@ First public release! 🎉
 [Vertical Rhythm]: https://zellwk.com/blog/why-vertical-rhythms/
 [foundations]: https://github.com/search?q=topic%3Afoundation+org%3Agridonic&type=Repositories
 [SassDoc]: http://sassdoc.com/
-[globbing]: https://github.com/isaacs/node-glob
-[node-sass-glob]: https://github.com/Jam3/node-sass-glob
+[node-sass-magic-importer]: https://github.com/maoberlehner/node-sass-magic-importer
 [highlight.js]: https://highlightjs.org/
 [Gemini]: https://github.com/gemini-testing/gemini
+[Selector filtering]: https://github.com/maoberlehner/node-sass-magic-importer#selector-filtering
+[Node filtering]: https://github.com/maoberlehner/node-sass-magic-importer#node-filtering
+[Module importing]: https://github.com/maoberlehner/node-sass-magic-importer#module-importing
+[Globbing]: https://github.com/maoberlehner/node-sass-magic-importer#globbing
