@@ -13,7 +13,7 @@
     "styleguide": "aigis run -c ./aigis/config.yml",
     "test": "./bin/gemini test",
     "test:update": "./bin/gemini update",
-    "watch": "npm run build -- --watch"
+    "watch": "onchange './src/**/*.scss' -w -- concurrently 'npm run styleguide' 'npm run docs'"
   },
   "author": "Gridonic <hello@gridonic.ch>",
   "license": "MIT",
@@ -23,6 +23,7 @@
     "node-aigis": "^1.4.0",
     "node-sass": "^4.5.2",
     "node-sass-magic-importer": "^4.1.4",
+    "onchange": "^3.2.1",
     "sassdoc": "^2.2.2",
     "selenium-standalone": "^6.2.0",
     "wait-on": "^2.0.2"
