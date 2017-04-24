@@ -27,28 +27,26 @@ Have fun! ✌️
 
 ```bash
 # install dependencies
-yarn
+npm install
 
 # builds the css files
-yarn build
+npm run build
 
 # builds the css files in production mode (compressed)
-yarn build:prod
+npm run build:prod
 
 # generates the styleguide
-yarn styleguide
+npm run styleguide
 
 # generates the code documentation
-yarn docs
+npm run docs
 
 # watches the sass files for changes and builds them automatically
-yarn watch
+npm run watch
 
 # run visual regression tests
-yarn test
+npm run test
 ```
-
-*Note:* You can replace `yarn` with `npm run` if you don’t want to use yarn. ¯\\\_(ツ)\_/¯
 
 #  
 <p align="center">
