@@ -69,6 +69,6 @@ npm run test
 [Vertical Rhythm]: https://zellwk.com/blog/why-vertical-rhythms/
 [Google Web Fundamentals]: https://developers.google.com/web/fundamentals
 [SassDoc]: http://sassdoc.com/
-[Gemini]: https://github.com/gemini-testing/gemini
+[Gemini]: ./gemini
 [downloaded]: https://github.com/gridonic/sass/releases/latest
 [recipes]: https://github.com/gridonic/sass/wiki/Recipes
