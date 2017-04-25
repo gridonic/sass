@@ -8,7 +8,7 @@
     - [Node filtering]
     - [Module importing]
     - [Globbing]
-- Aigis [`insert`](./aigis/templates/components.js#L20) parameter and improve [`config.yml`](./aigis/config.yml) documentation
+- Aigis [`insert`](./aigis/templates/components.ejs#L20) parameter and improve [`config.yml`](./aigis/config.yml) documentation
 - Aigis `github` and `arta` syntax [highlighting](./aigis/assets/css/highlight) themes
 - [Globbing](./src/components/_buttons.scss#L18) example in button group
 - [Example](./src/shared/_typography.scss#L43) for responsive typography
