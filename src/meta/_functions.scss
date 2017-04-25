@@ -46,5 +46,5 @@
 /// @param {Number} $string [1] - Factor of the vertical base
 /// @return {Length}
 @function vertical-base($factor: 1) {
-    @return $font-text-line-height * $factor;
+    @return $base-line-height * $factor;
 }

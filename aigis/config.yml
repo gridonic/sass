@@ -1,9 +1,44 @@
+# @see https://pxgrid.github.io/aigis/docs/en/category/Documentation/index.html
+
+# Specify relative path to a source file (or directory).
 source:
     - ../build
-source_type: .css
+
+# Only consider files with those extensions.
+source_type:
+  - .css
+
+# Specify destination directory.
 dest: ../styleguide
+
+# Specify dependent file and directory for the style guide.
 dependencies:
   - ./assets
+
+# Specify directory of template for generating style guide.
 template_dir: ./templates
+
+# Specify template engine for generating style guide.
 template_engine: ejs
+
+# Generates a color palette page which has all colors that are used in your project.
 color_palette: false
+
+# Enable or disable internal syntax highlighting. For flexibility reasons
+# (custom syntax highlighter) this is disabled by default.
+highlight: false
+
+# Adjust codeblock prefix. Default: language-
+lang_prefix: ''
+
+# Specify class name of the preview area.
+preview_class: styleguide-preview
+
+# Default settings for dynamic insertion of source and preview files.
+insert:
+  source:
+    language: javascript
+    extension: js
+  preview:
+    language: html
+    extension: html

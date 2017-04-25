@@ -1,18 +1,21 @@
 :root {
-    background-color: #2a2734;
+    background-color: #2a2433;
+}
+
+.hljs {
+    padding: 1rem;
 }
 
 .styleguide-sidebar {
     color: #fefefe;
 }
 
-
 .styleguide-content {
     background-color: #fefefe;
 }
 
 .styleguide-footer {
-    background-color: #2a2734;
+    background-color: #2a2433;
     color: #fefefe;
 }
 
@@ -22,5 +25,10 @@
 
 .styleguide-nav-tags > .link:hover {
     background-color: #fefefe;
-    color: #2a2734;
+    color: #2a2433;
+}
+
+.styleguide-nav-categories li li::after,
+.styleguide-nav-categories li li::before {
+    background-color: rgba(255, 255, 255, 0.125);
 }

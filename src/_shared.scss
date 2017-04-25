@@ -2,7 +2,7 @@
 ---
 name: Shared
 category: shared
-sourcePath: 
+sourcePath:
 ---
 
 Before creating components you most likely will have styles that are too
@@ -13,7 +13,7 @@ This for example could be generic typographic definitions, debugging styles or
 basic print styles.
 */
 @import "shared/debug";
-@import "shared/generic";
+@import "shared/base";
 @import "shared/typography";
 @import "shared/print";
 @import "shared/images";

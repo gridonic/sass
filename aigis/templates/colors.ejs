@@ -1,5 +1,7 @@
-<% if (colors) { %>
-    <% Object.keys(colors).forEach((name) => { %>
-        <span class="styleguide-color" style="background-color: <%= colors[name] %>" title="<%= name %>"></span>
+<% if (component.config.colors) { %>
+    <% Object.keys(component.config.colors).forEach((name) => { %>
+        <span class="styleguide-color"
+              style="background: <%= component.config.colors[name] %>"
+              title="<%= name %>"></span>
     <% }) %>
 <% } %>

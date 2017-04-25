@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><%= config.name %></title>
     <link href="<%= root %>assets/css/styles.css" rel="stylesheet">
-    <link href="<%= root %>assets/css/highlight/duotone-dark.css" rel="stylesheet">
-    <link href="<%= root %>assets/css/themes/duotone-light.css" rel="stylesheet">
+    <link href="<%= root %>assets/css/highlight/arta.css" rel="stylesheet">
+    <link href="<%= root %>assets/css/themes/light.css" rel="stylesheet">
     <link href="../<%= root %>build/styles.css" rel="stylesheet">
 </head>
 <body>
@@ -18,5 +18,8 @@
         <%- include('./components') %>
     </main>
     <footer class="styleguide-footer">Last update at <%= timestamp %></footer>
+
+    <script src="<%= root %>assets/js/highlight.js"></script>
+    <script src="<%= root %>assets/js/app.js"></script>
 </body>
 </html>

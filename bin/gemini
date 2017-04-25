@@ -1,0 +1,11 @@
+#!/bin/bash
+PATH=$(npm bin):$PATH;
+
+# @see https://github.com/kimmobrunfeldt/concurrently
+concurrently \
+    -kp " {name} " \
+    -c "bgBlue.bold,bgMagenta.bold" \
+    -s first \
+    -n "Selenium,Gemini" \
+    "selenium-standalone start 2> /dev/null" \
+    "wait-on tcp:4444 && gemini --config ./gemini/config.yml --reporter flat $*"

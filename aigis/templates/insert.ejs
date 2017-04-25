@@ -1,0 +1,17 @@
+<% name = `../../${sourcePath.slice(0, sourcePath.lastIndexOf('.'))}` %>
+<% file = {
+    preview: `${name}.${config.insert.preview.extension}`,
+    source: `${name}.${config.insert.source.extension}`
+} %>
+
+<% if (insert.preview || (Array.isArray(insert) && insert.indexOf('preview') > -1)) { %>
+    <% preview = typeof insert.preview === 'string' ? insert.preview : file.preview %>
+    <div class="<%= config.preview_class %>">
+        <%- include(preview) %>
+    </div>
+<% } %>
+
+<% if (insert.source || (Array.isArray(insert) && insert.indexOf('source') > -1)) { %>
+    <% source = typeof insert.source === 'string' ? insert.source : file.source %>
+    <pre><code class="<%= config.lang_prefix %><%= config.insert.source.language %>"><%= include(source) %></code></pre>
+<% } %>

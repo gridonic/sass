@@ -1,5 +1,5 @@
 // -----------------------------------------------------------------------------
-// Generic styles.
+// Base styles.
 // -----------------------------------------------------------------------------
 :root {
     box-sizing: border-box;
@@ -14,4 +14,5 @@
 a {
     color: currentColor;
     display: inline-block;
+    text-decoration-skip: ink;
 }

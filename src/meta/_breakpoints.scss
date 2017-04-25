@@ -29,7 +29,7 @@ Resolution relative settings. Excerpt from Google web fundamentals:<sup>[1]</sup
 
 Currently defined breakpoints:
 
-```json
+```yaml
 #{stringify($breakpoints, (separator: "\a"))}
 ```
 

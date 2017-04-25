@@ -2,9 +2,15 @@
 
 # Sass foundation
 
-This repository represents our starting point for creating CSS styles. Comes with [Aigis] and [SassDoc] for generating a styleguide and a code documentation.
+This repository represents our starting point for creating *sane*, *scalable* and *maintainable* CSS.
 
-Uses the following libraries by default:
+💪 It’s empowered by:
+
+- [Aigis] *(styleguide generator)*
+- [SassDoc] *(code documentation)*
+- [Gemini] *(utility for visual regression testing)*
+
+📚 Uses the following libraries by default:
 
 - [normalize.css]
 - [include-media]
@@ -17,11 +23,17 @@ Uses the following libraries by default:
 
 Have fun! ✌️
 
+## Wait, how am I supposed to use it?
+
+**Primarily** it’s meant to be [downloaded], extracted and used as a starting point that will grow/adjust from time to time while you work with it.
+
+ℹ️ Meanwhile see the wiki for additional [recipes] on how to use this foundation.
+
 ## Build setup
 
 ```bash
 # install dependencies
-yarn
+npm install
 
 # builds the css files
 npm run build
@@ -29,16 +41,17 @@ npm run build
 # builds the css files in production mode (compressed)
 npm run build:prod
 
-# builds the styleguide
+# generates the styleguide
 npm run styleguide
 
-# builds the code documentation
+# generates the code documentation
 npm run docs
 
 # watches the sass files for changes and builds them automatically
+# including the styleguide and the docs
 npm run watch
 
-# tests if the sass files would build without errors
+# run visual regression tests
 npm test
 ```
 
@@ -57,3 +70,6 @@ npm test
 [Vertical Rhythm]: https://zellwk.com/blog/why-vertical-rhythms/
 [Google Web Fundamentals]: https://developers.google.com/web/fundamentals
 [SassDoc]: http://sassdoc.com/
+[Gemini]: ./gemini
+[downloaded]: https://github.com/gridonic/sass/releases/latest
+[recipes]: https://github.com/gridonic/sass/wiki/Recipes

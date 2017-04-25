@@ -4,26 +4,30 @@ name: Debugging styles
 category:
     - debug
     - debug/styles
-sourcePath: 
+sourcePath: /shared/_debug.scss
 ---
 
-For visually debugging there are currently two classes that will help you.
-Place them on any element you like.
+For debugging *visually* the classes below probably will help you. Place them
+on any element you would like to.
 
 - `debug-vertical-rhythm` (shows the vertical baseline grid)
 - `debug-breakpoints` (shows the currently active breakpoint)
+- `debug-box-model` (draws an outline around the element and *every* child element)
 
+```html
+<button onclick="document.documentElement.classList.toggle('debug-breakpoints')">debug-breakpoints</button>
+<button onclick="document.body.classList.toggle('debug-vertical-rhythm')">debug-vertical-rhythm</button>
+<button onclick="document.body.classList.toggle('debug-box-model')">debug-box-model</button>
+```
 */
 .debug-vertical-rhythm {
     position: relative;
 
     &::after {
         background-color: transparent;
-        background-image: linear-gradient(transparent calc(100% - 1px), rgba(#37f, 0.1) 0%),
-                          linear-gradient(transparent calc(100% - 1px), rgba(#37f, 0.1) 0%);
-        background-repeat: repeat, repeat;
-        background-size: 100% vertical-base(),
-                         100% vertical-base(0.5);
+        background-image: linear-gradient(transparent 50%, rgba(#37f, 0.25) 0%);
+        background-repeat: repeat;
+        background-size: 100% vertical-base();
         content: "";
         min-height: 100%;
         left: 0;
@@ -56,5 +60,14 @@ Place them on any element you like.
                 content: "breakpoint: #{$name} (#{$width})";
             }
         }
+    }
+}
+
+.debug-box-model {
+    &,
+    & *,
+    & *::after,
+    & *::before {
+        outline: 1px solid rgba(#f33, 0.5);
     }
 }

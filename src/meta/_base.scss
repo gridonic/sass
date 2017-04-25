@@ -1,14 +1,15 @@
-// -----------------------------------------------------------------------------
-// Typography.
-// -----------------------------------------------------------------------------
-$font-headline-family: Open Sans, Segoe UI, Tahoma, sans-serif;
-$font-text-family: Open Sans, Segoe UI, Tahoma, sans-serif;
-$font-text-line-height: 1.375rem;
-$font-text-rendering: optimizeLegibility;
-$font-text-size: 16px;
+// Base font family.
+$base-font-family: sans-serif !default;
 
-// -----------------------------------------------------------------------------
-// Z-index listing.
-// -----------------------------------------------------------------------------
-$z-default: 1;
-$z-debug: 500;
+// Base font size. Will be used in :root as font-size.
+$base-font-size: 16px !default;
+
+// Base headline font family.
+$base-headline-family: sans-serif !default;
+
+// Base headline text rendering.
+// @see https://developer.mozilla.org/en/docs/Web/CSS/text-rendering
+$base-headline-rendering: optimizeLegibility !default;
+
+// Base line-height, also represents the vertical-base unit.
+$base-line-height: 1.375rem !default;
