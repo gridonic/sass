@@ -48,10 +48,11 @@ npm run styleguide
 npm run docs
 
 # watches the sass files for changes and builds them automatically
+# including the styleguide and the docs
 npm run watch
 
 # run visual regression tests
-npm run test
+npm test
 ```
 
 #  
