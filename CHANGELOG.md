@@ -1,5 +1,5 @@
-# [Unreleased]
-###### 2017-04-??
+# [1.3.0]
+###### 2017-04-25
 
 ###### Added
 - [Gemini] for visual regression testing 👏
@@ -8,7 +8,7 @@
     - [Node filtering]
     - [Module importing]
     - [Globbing]
-- Aigis `insert` parameter and improve `config.yml` documentation
+- Aigis [`insert`](./aigis/templates/components.ejs#L20) parameter and improve [`config.yml`](./aigis/config.yml) documentation
 - Aigis `github` and `arta` syntax [highlighting](./aigis/assets/css/highlight) themes
 - [Globbing](./src/components/_buttons.scss#L18) example in button group
 - [Example](./src/shared/_typography.scss#L43) for responsive typography
@@ -62,7 +62,7 @@ Lots of new features have been added. 👏
 
 First public release! 🎉
 
-[Unreleased]: https://github.com/gridonic/sass/compare/1.2.0...HEAD
+[1.3.0]: https://github.com/gridonic/sass/compare/1.2.0...1.3.0
 [1.2.0]: https://github.com/gridonic/sass/compare/1.1.0...1.2.0
 [1.1.0]: https://github.com/gridonic/sass/compare/1.0.0...1.1.0
 
