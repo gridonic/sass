@@ -48,7 +48,11 @@
     "documentation-generator",
     "sassdoc",
     "aigis",
-    "rscss"
+    "rscss",
+    "gemini",
+    "visual-testing",
+    "ui-testing",
+    "testing"
   ],
   "bugs": {
     "url": "https://github.com/gridonic/sass/issues"
