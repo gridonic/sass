@@ -13,7 +13,7 @@
     "styleguide": "aigis run -c ./aigis/config.yml",
     "test": "./bin/gemini test",
     "test:update": "./bin/gemini update",
-    "watch": "onchange './src/**/*.scss' -w -- concurrently 'npm run styleguide' 'npm run docs'"
+    "watch": "onchange './src/**/*.scss' -w -i -- concurrently 'npm run styleguide' 'npm run docs'"
   },
   "author": "Gridonic <hello@gridonic.ch>",
   "license": "MIT",
