@@ -6,8 +6,10 @@
   "scripts": {
     "build": "node-sass ./src -o ./build --importer ./node_modules/node-sass-magic-importer/dist/cli.js",
     "build:prod": "npm run build -- --output-style compressed",
+    "clean": "rimraf ./build",
     "docs": "sassdoc ./src -d ./docs -v",
     "postinstall": "selenium-standalone install",
+    "prebuild": "npm run clean",
     "prestyleguide": "npm run build",
     "pretest": "npm run styleguide",
     "styleguide": "aigis run -c ./aigis/config.yml",
@@ -24,6 +26,7 @@
     "node-sass": "^4.5.2",
     "node-sass-magic-importer": "^4.1.4",
     "onchange": "^3.2.1",
+    "rimraf": "^2.6.1",
     "sassdoc": "^2.2.2",
     "selenium-standalone": "^6.2.0",
     "wait-on": "^2.0.2"
