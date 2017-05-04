@@ -35,6 +35,11 @@ pre code {
     padding: 1rem;
 }
 
+p,
+li {
+    max-width: 70ch;
+}
+
 :not(pre) > code {
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 3px;
@@ -119,10 +124,7 @@ pre code {
     display: inline-block;
     position: relative;
     text-decoration: none;
-}
-
-.styleguide-nav-categories a::first-letter {
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 .styleguide-nav-categories ul {
