@@ -64,6 +64,12 @@ li {
     width: 320px;
 }
 
+.styleguide-sidebar > .logo {
+    display: block;
+    margin: 0 auto 2em;
+    width: 96px;
+}
+
 .styleguide-sidebar > .tags,
 .styleguide-sidebar > .categories {
     margin: 1.5em 0 2em;
