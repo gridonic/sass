@@ -3,10 +3,10 @@ $breakpoints: (
     medium: 768px,
     large: 1024px,
     huge: 1440px
-);
+) !default;
 
 // @see https://github.com/eduardoboucas/include-media/issues/14
-$unit-intervals: ("px": 1, "em": 0.065, "rem": 0.0625);
+$unit-intervals: ("px": 1, "em": 0.065, "rem": 0.0625) !default;
 
 /*
 ---
