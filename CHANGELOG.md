@@ -1,3 +1,9 @@
+# [1.4.0]
+###### 2017-??-??
+
+###### Added
+- [PostCSS] with [Autoprefixer] and “last 2 versions” as default [browserlist]
+
 # [1.3.0]
 ###### 2017-04-25
 
@@ -62,6 +68,7 @@ Lots of new features have been added. 👏
 
 First public release! 🎉
 
+[1.4.0]: https://github.com/gridonic/sass/compare/1.3.0...HEAD
 [1.3.0]: https://github.com/gridonic/sass/compare/1.2.0...1.3.0
 [1.2.0]: https://github.com/gridonic/sass/compare/1.1.0...1.2.0
 [1.1.0]: https://github.com/gridonic/sass/compare/1.0.0...1.1.0
@@ -80,3 +87,6 @@ First public release! 🎉
 [Node filtering]: https://github.com/maoberlehner/node-sass-magic-importer#node-filtering
 [Module importing]: https://github.com/maoberlehner/node-sass-magic-importer#module-importing
 [Globbing]: https://github.com/maoberlehner/node-sass-magic-importer#globbing
+[Autoprefixer]: https://github.com/postcss/autoprefixer
+[PostCSS]: https://github.com/postcss/postcss
+[browserlist]: http://browserl.ist/
