@@ -36,7 +36,7 @@
   },
   "dependencies": {
     "include-media": "^1.4.9",
-    "normalize.css": "^6.0.0"
+    "normalize.css": "^7.0.0"
   },
   "repository": {
     "type": "git",
