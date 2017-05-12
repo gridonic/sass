@@ -89,4 +89,4 @@ First public release! 🎉
 [Globbing]: https://github.com/maoberlehner/node-sass-magic-importer#globbing
 [Autoprefixer]: https://github.com/postcss/autoprefixer
 [PostCSS]: https://github.com/postcss/postcss
-[browserlist]: http://browserl.ist/
+[browserlist]: http://browserl.ist/?q=last+2+versions
