@@ -4,6 +4,7 @@
 ###### Added
 - [PostCSS] with [Autoprefixer] and “last 2 versions” as default [browserlist]
 - [HTML Validator] [script](./bin/validate_html) (using [validator.w3.org/nu]) to make sure documented components have valid markup
+- [Custom](./aigis/templates/menu.ejs) categories tree menu renderer for a more flexible theming support
 
 # [1.3.0]
 ###### 2017-04-25
