@@ -1,6 +1,6 @@
 {
   "name": "@gridonic/sass",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "Our Sass foundation.",
   "main": "./src/styles.scss",
   "scripts": {

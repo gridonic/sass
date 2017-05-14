@@ -1,10 +1,20 @@
 # [1.4.0]
-###### 2017-??-??
+###### 2017-05-15
 
 ###### Added
 - [PostCSS] with [Autoprefixer] and “last 2 versions” as default [browserlist]
 - [HTML Validator] [script](./bin/validate_html) (using [validator.w3.org/nu]) to make sure documented components have valid markup
 - [Custom](./aigis/templates/menu.ejs) categories tree menu renderer for a more flexible theming support
+- [Separate chapter](./src/shared/_typography.scss#L41) for vertical rhythm
+- [Hover state](./tests/buttons/button-primary.js#L10) check in example button-primary test
+- Placeholder logo to styleguide sidebar
+- `!default` to breakpoint variables
+- Text length limit (*forced newline*) of [~70 characters](./aigis/assets/css/styles.css#L40) to styleguide
+
+###### Changed
+- Watch task to run commands also initially
+- Watch task to watch for changes in aigis folder as well
+- Build task to clean beforehand
 
 # [1.3.0]
 ###### 2017-04-25
@@ -70,7 +80,7 @@ Lots of new features have been added. 👏
 
 First public release! 🎉
 
-[1.4.0]: https://github.com/gridonic/sass/compare/1.3.0...HEAD
+[1.4.0]: https://github.com/gridonic/sass/compare/1.3.0...1.4.0
 [1.3.0]: https://github.com/gridonic/sass/compare/1.2.0...1.3.0
 [1.2.0]: https://github.com/gridonic/sass/compare/1.1.0...1.2.0
 [1.1.0]: https://github.com/gridonic/sass/compare/1.0.0...1.1.0
