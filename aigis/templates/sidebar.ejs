@@ -1,8 +1,13 @@
 <img class="logo" src="<%= root %>assets/images/logos/sass.svg" alt="Sass">
 
 <h2>Categories</h2>
-<nav class="categories styleguide-nav-categories">
-    <%- helper.renderCollectionTree('category') %>
+<nav class="categories styleguide-nav-categories styleguide-tree" data-tree>
+    <% tree = helper.renderCollectionTree('category'); %>
+    <%-
+        include('./menu', {
+            items: tree.children
+        })
+    %>
 </nav>
 
 <h2>Tags</h2>

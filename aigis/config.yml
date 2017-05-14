@@ -42,3 +42,7 @@ insert:
   preview:
     language: html
     extension: html
+
+# See https://github.com/pxgrid/aigis/pull/106
+helper_options:
+  renderTemplateJSON: true
