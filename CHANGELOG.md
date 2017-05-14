@@ -3,6 +3,7 @@
 
 ###### Added
 - [PostCSS] with [Autoprefixer] and “last 2 versions” as default [browserlist]
+- [HTML Validator] [script](./bin/validate_html) (using [validator.w3.org/nu]) to make sure documented components have valid markup
 
 # [1.3.0]
 ###### 2017-04-25
@@ -90,3 +91,5 @@ First public release! 🎉
 [Autoprefixer]: https://github.com/postcss/autoprefixer
 [PostCSS]: https://github.com/postcss/postcss
 [browserlist]: http://browserl.ist/?q=last+2+versions
+[HTML Validator]: https://github.com/zrrrzzt/html-validator
+[validator.w3.org/nu]: https://validator.w3.org/nu/
