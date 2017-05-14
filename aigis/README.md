@@ -13,6 +13,3 @@ We are using [Aigis] to generate our styleguides. See the [official docs] for ad
   <a href="https://gridonic.github.io">gridonic.github.io</a> ・
   <a href="https://twitter.com/gridonic">@gridonic</a>
 </p>
-
-[normalize.css]: https://necolas.github.io/normalize.css/
-[include-media]: http://include-media.com/

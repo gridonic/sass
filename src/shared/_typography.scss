@@ -3,16 +3,15 @@
 name: Typography
 tag:
   - typography
-  - vertical-rhythm
 category:
   - shared
   - shared/typography
 sourcePath: /shared/_typography.scss
 ---
 
-The base font family is `#{$base-font-family}` and the base font-size is
-`#{$base-font-size}`. The base line-height, which is also the vertical
-base<sup>[1]</sup> unit, is `#{$base-line-height}`.
+The base *font-family* is `#{$base-font-family}` and the base *font-size* is
+`#{$base-font-size}`. The base *line-height*, which is also the *vertical
+rhythm* base<sup>[1]</sup> unit, is `#{$base-line-height}`.
 
 The best way to implement a responsive typography is by adjusting the
 `font-size` within the `:root` element. This will also make sure that the
@@ -35,6 +34,34 @@ the commonly used weight names below.<sup>[2]</sup>
 
 [1]: https://zellwk.com/blog/why-vertical-rhythms/
 [2]: http://www.w3.org/TR/css3-fonts/#font-weight-prop
+*/
+
+/*
+---
+name: Vertical rhythm
+tag:
+  - typography
+  - vertical-rhythm
+category:
+  - shared
+  - shared/typography
+  - shared/typography/vertical-rhythm
+sourcePath: /shared/_typography.scss
+---
+
+There is a Sass function available called `vertical-base(x)`, which you can use to
+get the vertical base value or a factor of it.
+
+**Recommendation**: Try to avoid too tiny fractures. Quarters (¼) or larger are a
+good way to go.
+
+```scss
+.my-element {
+    margin-bottom: vertical-base(0.5); // Half of vertical base. ⇒ #{$base-line-height * 0.5}
+    margin-top: vertical-base(2); // Double… ⇒ #{$base-line-height * 2}
+}
+```
+
 */
 :root {
     font-family: $base-font-family;

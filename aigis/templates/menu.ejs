@@ -1,0 +1,23 @@
+<% if (Array.isArray(items) && items.length > 0) { %>
+    <ul class="branches styleguide-tree-branches" data-branches>
+    <% items.forEach((item) => { %>
+        <% const submenu =
+            include('./menu', {
+                items: item.children
+            })
+        %>
+
+        <% const hasActive = submenu.indexOf('-active') >= 0 || item.isCurrent %>
+
+        <li class="branch styleguide-tree-branch<% if (hasActive) { %> -active -open<%} %>" data-branch>
+
+            <% if (item.children.length > 0) { %>
+                <button class="expand" data-expand></button>
+            <% } %>
+
+            <a class="label" href="<%= item.href %>"><%= item.name %></a>
+            <%- submenu %>
+        </li>
+    <% }) %>
+    </ul>
+<% } %>

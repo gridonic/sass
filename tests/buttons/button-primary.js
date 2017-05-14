@@ -3,5 +3,11 @@ gemini.suite('buttons/button-primary', (suite) => {
     suite
         .setUrl('/category/components/buttons/primary')
         .setCaptureElements('.button-primary')
-        .capture('plain');
+        .before((actions, find) => {
+            this.button = find('.button-primary');
+        })
+        .capture('plain')
+        .capture('hovered', (actions, find) => {
+            actions.mouseMove(this.button);
+        });
 });
