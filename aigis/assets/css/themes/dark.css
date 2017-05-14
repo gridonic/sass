@@ -28,7 +28,11 @@
     color: #2a2433;
 }
 
-.styleguide-nav-categories li li::after,
-.styleguide-nav-categories li li::before {
-    background-color: rgba(255, 255, 255, 0.125);
+.styleguide-tree-branch:not(.-active) {
+    color: #959595;
+}
+
+.styleguide-tree-branch:hover > .label,
+.styleguide-tree-branch:hover > .expand {
+    color: #fefefe;
 }
