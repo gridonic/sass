@@ -80,7 +80,7 @@ Lots of new features have been added. 👏
 
 First public release! 🎉
 
-[1.4.0]: https://github.com/gridonic/sass/compare/1.3.0...HEAD
+[1.4.0]: https://github.com/gridonic/sass/compare/1.3.0...1.4.0
 [1.3.0]: https://github.com/gridonic/sass/compare/1.2.0...1.3.0
 [1.2.0]: https://github.com/gridonic/sass/compare/1.1.0...1.2.0
 [1.1.0]: https://github.com/gridonic/sass/compare/1.0.0...1.1.0
