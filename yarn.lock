@@ -1359,6 +1359,10 @@ falafel@^1.0.1:
     isarray "0.0.1"
     object-keys "^1.0.6"
 
+family.scss@^1.0.8:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/family.scss/-/family.scss-1.0.8.tgz#b68ced23cc58c969aed5a313b3adc3339a104fe6"
+
 fd-slicer@~1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/fd-slicer/-/fd-slicer-1.0.1.tgz#8b5bcbd9ec327c5041bf9ab023fd6750f1177e65"

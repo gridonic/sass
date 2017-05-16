@@ -42,6 +42,7 @@
     "wait-on": "^2.0.2"
   },
   "dependencies": {
+    "family.scss": "^1.0.8",
     "include-media": "^1.4.9",
     "normalize.css": "^7.0.0"
   },
