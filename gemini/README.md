@@ -21,7 +21,7 @@ If you run the test out-of-the-box<sup>1</sup> it should **pass** 👍.
 
 If you make *any changes* to the styles of that component, that will *affect the visual appearance*, the test will **fail** 👎.
 
-In case the new styles are *correct* and should be the *new master* version, you need to *update the reference images* that Gemini has created for the test. Therefor simply run `yarn test:update`.
+In case the new styles are *correct* and should be the *new master* version, you need to *update the reference images* that Gemini has created for the test. Therefor simply run `npm run test:visual:update`.
 
 ℹ️ See the [official documentation] for additional information and instructions.
 
@@ -31,11 +31,11 @@ In case the new styles are *correct* and should be the *new master* version, you
 ## Commands
 
 ```bash
-# run visual regression tests
-yarn test
+# run visual regression tests (doesn’t update styleguide beforehand)
+npm run test:visual
 
 # capture or update reference images
-yarn test:update
+npm run test:visual:update
 ```
 
 *Note:* All commands above internally use the [`./bin/gemini`](../bin/gemini) bash script. Every parameter you add to those scripts will be passed directly to the real Gemini binary.
@@ -44,14 +44,14 @@ For example:
 
 ```bash
 # run tests with different root url
-yarn test -- --root-url http://example.com
+npm run test:visual -- --root-url http://example.com
 
 # produce an html file with reference image, current image and differences
 # between them, for each state in each browser.
-yarn test -- --reporter html
+npm run test:visual -- --reporter html
 
 # only run tests belonging to the buttons group
-yarn test -- --grep /buttons/
+npm run test:visual -- --grep /buttons/
 ```
 
 ℹ️ See [Gemini commands] and [Gemini configuration#Overriding settings] for additional information and instructions.
