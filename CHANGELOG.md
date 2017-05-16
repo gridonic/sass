@@ -1,3 +1,10 @@
+# [1.5.0]
+###### 2017-??-??
+
+###### Added
+- [Family.scss] for easier handling of `:nth-child` styles
+
+
 # [1.4.0]
 ###### 2017-05-15
 
@@ -104,3 +111,4 @@ First public release! 🎉
 [browserlist]: http://browserl.ist/?q=last+2+versions
 [HTML Validator]: https://github.com/zrrrzzt/html-validator
 [validator.w3.org/nu]: https://validator.w3.org/nu/
+[Family.scss]: https://lukyvj.github.io/family.scss/
