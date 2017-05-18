@@ -4,6 +4,7 @@
 ###### Added
 - [Family.scss] for easier handling of `:nth-child` styles
 - [cssnano] for compressing the production build
+- [StyleStats] to collect some CSS statistics
 
 # [1.4.1]
 ###### 2017-05-18
@@ -128,3 +129,4 @@ First public release! 🎉
 [validator.w3.org/nu]: https://validator.w3.org/nu/
 [Family.scss]: https://lukyvj.github.io/family.scss/
 [cssnano]: http://cssnano.co/
+[StyleStats]: https://github.com/t32k/stylestats

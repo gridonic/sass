@@ -48,6 +48,9 @@ npm run styleguide
 # generates the code documentation
 npm run docs
 
+# shows some statistics about the compiled css
+npm run stats
+
 # watches the sass files for changes and builds them automatically
 # including the styleguide and the docs
 npm run watch

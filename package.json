@@ -14,8 +14,10 @@
     "postcss": "postcss ./build/**/*.css -d ./build -c postcss.config.js",
     "postinstall": "selenium-standalone install",
     "precompile": "npm run clean",
+    "prestats": "npm run build",
     "prestyleguide": "npm run build",
     "pretest": "npm run styleguide",
+    "stats": "stylestats ./build/**/*.css",
     "styleguide": "aigis run -c ./aigis/config.yml",
     "test": "npm run test:html && npm run test:visual",
     "test:html": "./bin/validate_html styleguide/**/*.html",
@@ -44,6 +46,7 @@
     "rimraf": "^2.6.1",
     "sassdoc": "^2.2.2",
     "selenium-standalone": "^6.2.0",
+    "stylestats": "^7.0.1",
     "wait-on": "^2.0.2"
   },
   "dependencies": {
