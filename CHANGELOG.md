@@ -1,3 +1,16 @@
+# [1.4.1]
+###### 2017-05-18
+
+###### Changed
+- Renamed `npm run validate` to `npm run test:html`
+- Renamed `npm run test` to `npm run test:visual`
+- Renamed `npm run test:update` to `npm run test:visual:update`
+- `npm run test` to run `npm run test:html && npm run test:visual`
+
+###### Fixed
+- `Tree.deepToggle()` toggling only first element
+- HTML validation not printing results while processing files
+
 # [1.4.0]
 ###### 2017-05-15
 
@@ -80,6 +93,7 @@ Lots of new features have been added. 👏
 
 First public release! 🎉
 
+[1.4.1]: https://github.com/gridonic/sass/compare/1.4.0...1.4.1
 [1.4.0]: https://github.com/gridonic/sass/compare/1.3.0...1.4.0
 [1.3.0]: https://github.com/gridonic/sass/compare/1.2.0...1.3.0
 [1.2.0]: https://github.com/gridonic/sass/compare/1.1.0...1.2.0
