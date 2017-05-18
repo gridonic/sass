@@ -11,7 +11,7 @@
     "docs": "sassdoc ./src -d ./docs -v",
     "postbuild": "npm run postcss",
     "postbuild:prod": "npm run postcss -- -e prod",
-    "postcss": "postcss ./build/**/*.css -d ./build -c postcss.config.js",
+    "postcss": "postcss ./build/**/*.css -r -c postcss.config.js",
     "postinstall": "selenium-standalone install",
     "precompile": "npm run clean",
     "prestats": "npm run build",
