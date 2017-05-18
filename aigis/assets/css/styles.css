@@ -65,8 +65,15 @@ li {
 }
 
 .styleguide-sidebar > .logo {
+    background-image: url("../images/logos/sass.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
     display: block;
-    margin: 0 auto 2em;
+    font-size: 0;
+    height: 96px;
+    margin: 0 auto 2rem;
+    text-decoration: none;
     width: 96px;
 }
 
@@ -153,7 +160,7 @@ li {
     border: 0;
     color: currentColor;
     cursor: pointer;
-    display: inline-block;
+    font-size: inherit;
     left: 0;
     line-height: inherit;
     outline: 0;

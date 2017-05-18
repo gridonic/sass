@@ -3,55 +3,53 @@ const globby = require('globby');
 const validator = require('html-validator');
 const fse = require('fs-extra');
 const indent = require('indent-string');
+const figures = require('figures');
 const _ = require('chalk');
 
 function readPaths(paths) {
     return Promise.all(paths.map(path => fse.readFile(path)));
 }
 
-function validateInputs(inputs) {
-    return Promise.all(inputs.map(data => validator({
-        data
-    })));
+function validateInputs(inputs, paths) {
+    console.log(`\n${_.underline(`Validating ${paths.length} files:`)}\n`);
+
+    return Promise.all(
+        inputs.map(
+            (data, index) => validator({ data: data }).then(
+                (raw) => printResult(JSON.parse(raw).messages, paths[index])
+            )
+        )
+    );
 }
 
-function processResults(results, paths) {
+function printResult(messages, path) {
+    if (messages.length < 1) {
+        console.log(`${_.green(figures.tick)}  ${path}`);
+        return 0;
+    }
+
+    const details = messages.map(
+        ({ message }) => `${indent(`${figures.bullet} ${message}\n`, 3)}`
+    ).join('');
+
+    // We have errors…
+    if (messages.find(({ type }) => type === 'error')) {
+        console.log(`${_.red(figures.cross)}  ${path}\n\n${details}`);
+        return 1;
+    }
+
+    console.log(`${_.yellow(figures.warning)}  ${path}\n\n${details}`);
+    return 2;
+}
+
+function printSummary(results) {
     return new Promise((resolve, reject) => {
-        let errors = 0;
-        let warnings = 0;
-        let passed = 0;
-
-        console.log(`\n${_.underline(`Validating ${paths.length} files:`)}\n`);
-
-        results.forEach((raw, index) => {
-            const result = JSON.parse(raw);
-            const path = paths[index];
-
-            if (result.messages.length < 1) {
-                passed += 1;
-
-                console.log(`[${_.green('✓')}] ${path}`);
-            }
-
-            result.messages.forEach((message) => {
-                if (message.type === 'error') {
-                    errors += 1;
-
-                    console.log(`[${_.red('x')}] ${path}`);
-                } else {
-                    warnings += 1;
-
-                    console.log(`[${_.yellow('?')}] ${path}`);
-                }
-
-                console.log(`\n${indent(message.message, 4)}\n`);
-            });
-        });
+        const errors = results.filter(code => code === 1).length;
 
         console.log(
             `\nTotal: ${_.red(errors)} errors,`,
-            `${_.yellow(warnings)} warnings,`,
-            `${_.green(passed)} passed.\n`
+            `${_.yellow(results.filter(code => code === 2).length)} warnings,`,
+            `${_.green(results.filter(code => code === 0).length)} passed.\n`
         );
 
         if (errors > 0) {
@@ -63,10 +61,9 @@ function processResults(results, paths) {
 }
 
 globby(process.argv.splice(2))
-    .then(paths =>
-        readPaths(paths)
-            .then(inputs => validateInputs(inputs))
-            .then(results => processResults(results, paths))
+    .then(paths => readPaths(paths)
+        .then(inputs => validateInputs(inputs, paths))
+        .then(results => printSummary(results))
     ).catch((error) => {
         if (error) {
             console.error(error);

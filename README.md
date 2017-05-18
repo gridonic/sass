@@ -51,11 +51,15 @@ npm run docs
 # including the styleguide and the docs
 npm run watch
 
-# checks the markup validity (of the styleguide or the files you’ve specified)
-npm run validate
+# run visual regression tests and markup validation after css has been build
+# and styleguide has been generated
+npm run test
 
-# run visual regression tests
-npm test
+# checks the markup validity (of the styleguide or the files you’ve specified)
+npm run test:html
+
+# run visual regression tests only (doesn’t build and update styleguide beforehand)
+npm run test:visual
 ```
 
 #  

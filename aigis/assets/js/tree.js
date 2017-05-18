@@ -11,8 +11,10 @@ define(function () {
                 return;
             }
 
+            var action = $branch.classList.contains('-open') ? 'remove' : 'add';
+
             if (e.altKey) {
-                this.deepToggle($branch);
+                this.deepToggle($branch, action);
             } else {
                 this.toggle($branch);
             }
@@ -21,13 +23,14 @@ define(function () {
         }.bind(this));
     }
 
-    Tree.prototype.deepToggle = function($el) {
-        var $branch = $el;
-        var action = $el.classList.contains('-open') ? 'remove' : 'add';
+    Tree.prototype.deepToggle = function($el, action) {
+        var $targets = $el.querySelectorAll('[data-branch]');
 
-        do {
-            this.toggle($branch, action);
-        } while ($branch = $branch.querySelector('[data-branch]'));
+        for (var i = 0; i < $targets.length; i++) {
+            this.deepToggle($targets[i], action);
+        }
+
+        this.toggle($el, action);
     }
 
     Tree.prototype.toggle = function($el, force, classes) {
