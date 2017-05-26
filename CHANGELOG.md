@@ -5,6 +5,7 @@
 - [Family.scss] for easier handling of `:nth-child` styles
 - [cssnano] for compressing the production build
 - [StyleStats] to collect some CSS statistics
+- Source maps for default build
 
 # [1.4.1]
 ###### 2017-05-18
