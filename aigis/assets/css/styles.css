@@ -38,6 +38,7 @@ pre code {
 p,
 li {
     max-width: 70ch;
+    hyphens: auto;
 }
 
 :not(pre) > code {
