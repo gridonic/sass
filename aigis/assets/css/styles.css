@@ -41,6 +41,10 @@ li {
     hyphens: auto;
 }
 
+h3:not([class]):not(:first-child) {
+    margin-top: 2em;
+}
+
 :not(pre) > code {
     background-color: rgba(0, 170, 255, 0.065);
     border-radius: 2px;
