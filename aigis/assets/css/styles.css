@@ -118,10 +118,10 @@ h3:not([class]):not(:first-child) {
     padding-top: 50%;
 }
 
-.styleguide-color::after {
+.styleguide-color > .label {
     background-color: #fefefe;
-    content: attr(title);
     display: block;
+    font-size: smaller;
     margin: 1px;
     padding: 0.5em 1em;
 }
