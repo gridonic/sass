@@ -165,7 +165,6 @@ h3:not([class]):not(:first-child) {
     background: transparent;
     border: 0;
     color: currentColor;
-    cursor: pointer;
     font-size: inherit;
     left: 0;
     line-height: inherit;
