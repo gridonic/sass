@@ -1,7 +1,11 @@
 <% if (component.config.colors) { %>
-    <% Object.keys(component.config.colors).forEach((name) => { %>
-        <span class="styleguide-color" style="background: <%= component.config.colors[name] %>">
-            <span class="label"><%= name %> (<%= component.config.colors[name] %>)</span>
-        </span>
-    <% }) %>
+    <section class="styleguide-colors">
+
+        <% Object.keys(component.config.colors).forEach((name) => { %>
+            <span class="color styleguide-color" style="background: <%= component.config.colors[name] %>">
+                <span class="label"><%= name %> (<%= component.config.colors[name] %>)</span>
+            </span>
+        <% }) %>
+
+    </section>
 <% } %>
