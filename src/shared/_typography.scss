@@ -20,16 +20,16 @@ vertical rhythm adapts to the new font-size.
 For your information the following `font-weight` values roughly correspond to
 the commonly used weight names below.<sup>[2]</sup>
 
-```yaml
-100: Thin
-200: Extra Light (Ultra Light)
-300: Light
-400: Normal
-500: Medium
-600: Semi Bold (Demi Bold)
-700: Bold
-800: Extra Bold (Ultra Bold)
-900: Black (Heavy)
+```html
+100: <span style="font-weight: 100">Thin</span><br>
+200: <span style="font-weight: 200">Extra Light (Ultra Light)</span><br>
+300: <span style="font-weight: 300">Light</span><br>
+400: <span style="font-weight: 400">Normal</span><br>
+500: <span style="font-weight: 500">Medium</span><br>
+600: <span style="font-weight: 600">Semi Bold (Demi Bold)</span><br>
+700: <span style="font-weight: 700">Bold</span><br>
+800: <span style="font-weight: 800">Extra Bold (Ultra Bold)</span><br>
+900: <span style="font-weight: 900">Black (Heavy)</span>
 ```
 
 [1]: https://zellwk.com/blog/why-vertical-rhythms/
@@ -95,12 +95,14 @@ are formatted and ready for usage. Use the `h{1..6}` classes if you need to
 style non-headline markup as headlines.
 
 ```html
-<h1 class="h1">The quick brown fox jumps over the lazy dog.</h1>
-<h2 class="h2">Pack my box with five dozen liquor jugs.</h2>
-<h3 class="h3">Jackdaws love my big sphinx of quartz.</h3>
-<h4 class="h4">Five quacking Zephyrs jolt my wax bed.</h4>
-<h5 class="h5">The five boxing wizards jump quickly.</h5>
+<h1 class="h1">h1: The quick brown fox jumps over the lazy dog.</h1>
+<h2 class="h2">h2: Pack my box with five dozen liquor jugs.</h2>
+<h3 class="h3">h3: Jackdaws love my big sphinx of quartz.</h3>
+<h4 class="h4">h4: Five quacking Zephyrs jolt my wax bed.</h4>
+<h5 class="h5">h5: The five boxing wizards jump quickly.</h5>
+<h6 class="h6">h6: Sphinx of black quartz judge my vow.</h6>
 ```
+
 */
 h1, .h1,
 h2, .h2,
@@ -139,22 +141,3 @@ h5, .h5 {
     font-size: 1.125rem;
     line-height: vertical-base(1);
 }
-
-/*
----
-name: Paragraphs
-tag:
-  - typography
-category:
-  - shared
-  - shared/typography
-  - shared/typography/paragraphs
-sourcePath: /shared/_typography.scss
----
-
-Use `p`-Tags in order to create a paragraph.
-
-```html
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio dolor, odio velit dolores hic quia, repellendus culpa itaque tenetur totam, nesciunt aliquam quas ut possimus! Nemo fuga distinctio qui. Magni!</p>
-```
-*/
