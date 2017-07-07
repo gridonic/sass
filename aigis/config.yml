@@ -2,7 +2,7 @@
 
 # Specify relative path to a source file (or directory).
 source:
-    - ../build
+    - ../build/styles.css
 
 # Only consider files with those extensions.
 source_type:
@@ -14,6 +14,7 @@ dest: ../styleguide
 # Specify dependent file and directory for the style guide.
 dependencies:
   - ./assets
+  - ../build
 
 # Specify directory of template for generating style guide.
 template_dir: ./templates
