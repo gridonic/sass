@@ -110,22 +110,45 @@ hr {
     top: 0;
     width: 320px;
 
-    > .logo {
-        background-image: url("../assets/images/logos/sass.svg");
+    > .logo,
+    > .owner {
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
         display: block;
         font-size: 0;
-        height: 96px;
-        margin: 0 auto 2rem;
         text-decoration: none;
-        width: 96px;
+    }
+
+    > .logo {
+        background-image: url("../assets/images/logos/sass.svg");
+        height: 6rem;
+        margin: 0 auto 2rem;
+        width: 6rem;
+    }
+
+    > .owner {
+        background-image: url("../assets/images/logos/gridonic.svg");
+        height: 2rem;
+        margin: 5rem auto 1.5rem;
+        opacity: 0.25;
+        transition: opacity 333ms ease-in-out;
+        width: 2rem;
+
+        &:hover {
+            opacity: 1;
+        }
     }
 
     > .tags,
     > .categories {
         margin: 1.5em 0 2em;
+    }
+
+    > .version {
+        font-size: smaller;
+        opacity: 0.25;
+        text-align: center;
     }
 }
 
