@@ -15,7 +15,12 @@
                 <button class="expand" data-expand></button>
             <% } %>
 
-            <a class="label" href="<%= item.href %>"><%= item.name %></a>
+            <% if (item.href) { %>
+                <a class="label" href="<%= item.href %>"><%= item.name %></a>
+            <% } else { %>
+                <span class="label"><%= item.name %></span>
+            <% } %>
+
             <%- submenu %>
         </li>
     <% }) %>
