@@ -88,7 +88,9 @@ h3:not([class]):not(:first-child) {
     border: 1px solid rgba(0, 170, 255, 0.125);
     color: $color-dodger-blue;
     font-size: 0.9375rem;
+    hyphens: none;
     padding: 1px 4px;
+    white-space: nowrap;
 }
 
 .styleguide-sidebar {
