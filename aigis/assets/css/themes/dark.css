@@ -14,17 +14,13 @@
     background-color: #fefefe;
 }
 
-.styleguide-footer {
-    background-color: #2a2433;
-    color: #fefefe;
-}
-
 .styleguide-nav-tags > .link {
-    border-color: #fefefe;
+    border-color: rgba(255, 255, 255, 0.125);
 }
 
 .styleguide-nav-tags > .link:hover {
     background-color: #fefefe;
+    border-color: #fefefe;
     color: #2a2433;
 }
 
