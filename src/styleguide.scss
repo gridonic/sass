@@ -82,6 +82,13 @@ h3:not([class]):not(:first-child) {
     margin-top: 2em;
 }
 
+hr {
+    background-color: rgba(0, 0, 0, 0.125);
+    border: 0;
+    height: 2px;
+    margin: 2em 0;
+}
+
 :not(pre) > code {
     background-color: rgba(0, 170, 255, 0.065);
     border-radius: 2px;
