@@ -21,90 +21,6 @@
     background-color: #fbfafa;
 }
 
-sup {
-    a {
-        color: $color-dodger-blue;
-        text-decoration: none;
-
-        &::before { content: "\5b"; }
-        &::after { content: "\5d"; }
-    }
-
-    + sup a {
-        margin-left: 2px;
-    }
-}
-
-pre {
-    border-radius: 3px;
-    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.125);
-    overflow: auto;
-
-    code {
-        display: block;
-        font-size: 0.9375em;
-        line-height: 1.3125em;
-        padding: 1em;
-    }
-}
-
-p,
-li,
-blockquote {
-    max-width: 70ch;
-    hyphens: auto;
-}
-
-blockquote:not([class]) {
-    background-color: rgba($color-dodger-blue, 0.05);
-    border-left: 4px solid $color-dodger-blue;
-    color: $color-dodger-blue;
-    font-family: $base-quote-family;
-    margin: 2.5em 0;
-    padding: 2em;
-
-    p {
-        &:first-of-type { margin-top: 0; }
-        &:last-of-type { margin-bottom: 0; }
-    }
-
-    cite {
-        color: $color-black;
-        display: block;
-        font-family: $base-font-family;
-        font-style: normal;
-        margin-top: 2em;
-        text-align: right;
-
-        &::before {
-            content: "\2014";
-            padding-right: 0.5em;
-        }
-    }
-}
-
-h3:not([class]):not(:first-child) {
-    margin-top: 2em;
-}
-
-hr {
-    background-color: rgba(0, 0, 0, 0.125);
-    border: 0;
-    height: 2px;
-    margin: 2em 0;
-}
-
-:not(pre) > code {
-    background-color: rgba(0, 170, 255, 0.065);
-    border-radius: 2px;
-    border: 1px solid rgba(0, 170, 255, 0.125);
-    color: $color-dodger-blue;
-    font-size: 0.9375em;
-    hyphens: none;
-    padding: 1px 4px;
-    white-space: nowrap;
-}
-
 .styleguide-sidebar {
     bottom: 0;
     color: $color-black;
@@ -165,6 +81,94 @@ hr {
     padding: 3em;
     position: relative;
     width: calc(100% - 320px);
+
+    sup {
+        a {
+            color: $color-dodger-blue;
+            text-decoration: none;
+
+            &::before { content: "\5b"; }
+            &::after { content: "\5d"; }
+        }
+
+        + sup a {
+            margin-left: 2px;
+        }
+    }
+
+    pre {
+        border-radius: 3px;
+        box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.125);
+        overflow: auto;
+
+        code {
+            display: block;
+            font-size: 0.9375em;
+            line-height: 1.3125em;
+            padding: 1em;
+        }
+    }
+
+    p,
+    li,
+    blockquote {
+        max-width: 70ch;
+        hyphens: auto;
+    }
+
+    blockquote:not([class]) {
+        background-color: rgba($color-dodger-blue, 0.05);
+        border-left: 4px solid $color-dodger-blue;
+        color: $color-dodger-blue;
+        font-family: $base-quote-family;
+        margin: 2.5em 0;
+        padding: 2em;
+
+        p {
+            &:first-of-type { margin-top: 0; }
+            &:last-of-type { margin-bottom: 0; }
+        }
+
+        cite {
+            color: $color-black;
+            display: block;
+            font-family: $base-font-family;
+            font-style: normal;
+            margin-top: 2em;
+            text-align: right;
+
+            &::before {
+                content: "\2014";
+                padding-right: 0.5em;
+            }
+        }
+    }
+
+    h3:not([class]):not(:first-child) {
+        margin-top: 2em;
+    }
+
+    hr {
+        background-color: rgba(0, 0, 0, 0.125);
+        border: 0;
+        height: 2px;
+        margin: 2em 0;
+    }
+
+    :not(pre) > code {
+        background-color: rgba(0, 170, 255, 0.065);
+        border-radius: 2px;
+        border: 1px solid rgba(0, 170, 255, 0.125);
+        color: $color-dodger-blue;
+        font-size: 0.9375em;
+        hyphens: none;
+        padding: 1px 4px;
+        white-space: nowrap;
+    }
+
+    li + li {
+        margin-top: 0.5em;
+    }
 }
 
 .styleguide-colors {
