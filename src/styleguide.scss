@@ -42,9 +42,9 @@ pre {
 
     code {
         display: block;
-        font-size: 0.9375rem;
-        line-height: 1.3125rem;
-        padding: 1rem;
+        font-size: 0.9375em;
+        line-height: 1.3125em;
+        padding: 1em;
     }
 }
 
@@ -99,7 +99,7 @@ hr {
     border-radius: 2px;
     border: 1px solid rgba(0, 170, 255, 0.125);
     color: $color-dodger-blue;
-    font-size: 0.9375rem;
+    font-size: 0.9375em;
     hyphens: none;
     padding: 1px 4px;
     white-space: nowrap;
@@ -134,11 +134,11 @@ hr {
 
     > .owner {
         background-image: url("../assets/images/logos/gridonic.svg");
-        height: 2rem;
-        margin: 5rem auto 1.5rem;
+        height: 2em;
+        margin: 5em auto 1.5em;
         opacity: 0.25;
         transition: opacity 333ms ease-in-out;
-        width: 2rem;
+        width: 2em;
 
         &:hover {
             opacity: 1;
@@ -199,7 +199,7 @@ hr {
 .styleguide-nav-tags {
     display: flex;
     flex-wrap: wrap;
-    font-size: 0.8125rem;
+    font-size: 0.8125em;
 
     > .link {
         border-radius: 3px;
@@ -313,7 +313,7 @@ hr {
     border-radius: 3px;
     box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.125);
     margin: 0;
-    padding: 1rem;
+    padding: 1em;
 }
 
 :not(.styleguide-preview) > table {
@@ -335,5 +335,5 @@ hr {
 }
 
 .hljs {
-    padding: 1rem;
+    padding: 1em;
 }
