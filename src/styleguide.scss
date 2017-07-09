@@ -56,14 +56,14 @@ blockquote {
 }
 
 blockquote:not([class]) {
+    background-color: rgba($color-dodger-blue, 0.05);
     border-left: 4px solid $color-dodger-blue;
-    color: rgba($color-black, 0.5);
+    color: $color-dodger-blue;
+    font-family: $base-quote-family;
     margin: 2.5em 0;
-    padding: 1.5em 2em;
+    padding: 2em;
 
     p {
-        font-family: $base-quote-family;
-
         &:first-of-type { margin-top: 0; }
         &:last-of-type { margin-bottom: 0; }
     }
@@ -75,6 +75,11 @@ blockquote:not([class]) {
         font-style: normal;
         margin-top: 2em;
         text-align: right;
+
+        &::before {
+            content: "\2014";
+            padding-right: 0.5em;
+        }
     }
 }
 
