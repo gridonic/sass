@@ -11,7 +11,7 @@
     "build": "npm run compile -- --source-comments --source-map-contents --source-map-embed",
     "build:prod": "npm run compile -- --output-style compressed",
     "clean": "rimraf $npm_package_config_dest",
-    "compile": "node-sass $npm_package_config_src -o $npm_package_config_dest --importer ./node_modules/node-sass-magic-importer/dist/cli.js",
+    "compile": "node-sass $npm_package_config_src -o $npm_package_config_dest --importer ./lib/importer.js",
     "docs": "sassdoc $npm_package_config_src -d ./docs -v",
     "postbuild": "npm run postcss",
     "postbuild:prod": "npm run postcss -- -e prod",
@@ -84,5 +84,8 @@
     "url": "https://github.com/gridonic/sass/issues"
   },
   "homepage": "https://github.com/gridonic/sass#readme",
-  "browserslist": "last 2 versions"
+  "browserslist": "last 2 versions",
+  "magicImporter": {
+    "disableImportOnce": true
+  }
 }
