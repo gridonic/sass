@@ -1,4 +1,4 @@
-requirejs(['tree', 'highlight'], function (Tree, HighlightJS) {
+require(['tree', 'highlight'], function (Tree, HighlightJS) {
     HighlightJS.initHighlighting();
 
     var $tree = document.querySelector('[data-tree]');

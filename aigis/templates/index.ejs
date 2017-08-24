@@ -5,19 +5,19 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><%= config.name %></title>
-    <link href="<%= root %>assets/css/styles.css" rel="stylesheet">
     <link href="<%= root %>assets/css/highlight/arta.css" rel="stylesheet">
-    <link href="<%= root %>assets/css/themes/light.css" rel="stylesheet">
-    <link href="../<%= root %>build/styles.css" rel="stylesheet">
+    <link href="<%= root %>build/styles.css" rel="stylesheet">
+    <link href="<%= root %>build/styleguide.css" rel="stylesheet">
+    <!--<link href="<%= root %>assets/css/themes/dark.css" rel="stylesheet">-->
 </head>
 <body>
     <aside class="styleguide-sidebar">
         <%- include('./sidebar') %>
     </aside>
+
     <main class="styleguide-content">
         <%- include('./components') %>
     </main>
-    <footer class="styleguide-footer">Last update at <%= timestamp %></footer>
 
     <script data-main="<%= root %>assets/js/main"
             src="<%= root %>assets/js/require.js"></script>

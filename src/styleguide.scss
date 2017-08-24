@@ -1,0 +1,338 @@
+/*!-----------------------------------------------------------------------------
+   Master Styleguide Stylesheet.
+
+   Project:       <%= project %>
+   Version:       <%= version %>
+   Contributors:  Gridonic <hello@gridonic.ch>
+   URL:           <%= url %>
+   -------------------------------------------------------------------------- */
+
+@import "meta";
+@import "vendor";
+
+// -----------------------------------------------------------------------------
+
+:root {
+    background-color: #fbfafa;
+}
+
+.styleguide-sidebar {
+    bottom: 0;
+    color: $color-black;
+    left: 0;
+    overflow: auto;
+    padding: 2em;
+    position: fixed;
+    top: 0;
+    width: 320px;
+
+    > .logo,
+    > .owner {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: block;
+        font-size: 0;
+        text-decoration: none;
+    }
+
+    > .logo {
+        background-image: url("../assets/images/logos/sass.svg");
+        height: 6rem;
+        margin: 0 auto 2rem;
+        width: 6rem;
+    }
+
+    > .owner {
+        background-image: url("../assets/images/logos/gridonic.svg");
+        height: 2em;
+        margin: 5em auto 1.5em;
+        opacity: 0.25;
+        transition: opacity 333ms ease-in-out;
+        width: 2em;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    > .tags,
+    > .categories {
+        margin: 1.5em 0 2em;
+    }
+
+    > .version {
+        font-size: smaller;
+        opacity: 0.25;
+        text-align: center;
+    }
+}
+
+.styleguide-content {
+    background-color: #fefefe;
+    box-shadow: 0px 0 4px rgba(0, 0, 0, 0.125);
+    margin: 0 0 0 320px;
+    min-height: 100vh;
+    padding: 3em;
+    position: relative;
+    width: calc(100% - 320px);
+
+    sup {
+        a {
+            color: $color-dodger-blue;
+            text-decoration: none;
+
+            &::before { content: "\5b"; }
+            &::after { content: "\5d"; }
+        }
+
+        + sup a {
+            margin-left: 2px;
+        }
+    }
+
+    pre {
+        border-radius: 3px;
+        box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.125);
+        overflow: auto;
+
+        code {
+            display: block;
+            font-size: 0.9375em;
+            line-height: 1.3125em;
+            padding: 1em;
+        }
+    }
+
+    p,
+    li,
+    blockquote {
+        max-width: 70ch;
+        hyphens: auto;
+    }
+
+    blockquote:not([class]) {
+        background-color: rgba($color-dodger-blue, 0.05);
+        border-left: 4px solid $color-dodger-blue;
+        color: $color-dodger-blue;
+        font-family: $base-quote-family;
+        margin: 2.5em 0;
+        padding: 2em;
+
+        p {
+            &:first-of-type { margin-top: 0; }
+            &:last-of-type { margin-bottom: 0; }
+        }
+
+        cite {
+            color: $color-black;
+            display: block;
+            font-family: $base-font-family;
+            font-style: normal;
+            margin-top: 2em;
+            text-align: right;
+
+            &::before {
+                content: "\2014";
+                padding-right: 0.5em;
+            }
+        }
+    }
+
+    h3:not([class]):not(:first-child) {
+        margin-top: 2em;
+    }
+
+    hr {
+        background-color: rgba(0, 0, 0, 0.125);
+        border: 0;
+        height: 2px;
+        margin: 2em 0;
+    }
+
+    :not(pre) > code {
+        background-color: rgba(0, 170, 255, 0.065);
+        border-radius: 2px;
+        border: 1px solid rgba(0, 170, 255, 0.125);
+        color: $color-dodger-blue;
+        font-size: 0.9375em;
+        hyphens: none;
+        padding: 1px 4px;
+        white-space: nowrap;
+    }
+
+    li + li {
+        margin-top: 0.5em;
+    }
+}
+
+.styleguide-colors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 3em;
+
+    > .color {
+        width: calc(33% - 1em);
+
+        @include after-first(3) {
+            margin-top: 2em;
+        }
+    }
+}
+
+.styleguide-color {
+    align-items: flex-end;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.25);
+    display: flex;
+    padding-top: 15%;
+
+    > .label {
+        background-color: $color-white;
+        font-size: smaller;
+        margin: 1px;
+        padding: 0.5em 1em;
+    }
+}
+
+.styleguide-nav-tags {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.8125em;
+
+    > .link {
+        border-radius: 3px;
+        border: 1px solid rgba($color-black, 0.125);
+        margin: 0 0.5em 0.5em 0;
+        padding: 2px 8px;
+        text-decoration: none;
+
+        &:hover {
+            background-color: rgba($color-black, 0.125);
+        }
+    }
+}
+
+.styleguide-tree {
+    line-height: 1.5;
+    text-transform: capitalize;
+}
+
+.styleguide-tree-branches {
+    list-style-type: none;
+    margin: 0 0 0.75em;
+    padding: 0;
+    user-select: none;
+
+    > .branch {
+        padding-left: 1.125em;
+        position: relative;
+    }
+}
+
+.styleguide-tree-branch {
+    &.-open {
+        > .expand::after {
+            content: "\25be";
+        }
+    }
+
+    &:not(.-open) > .branches {
+        display: none;
+    }
+
+    &:not(.-active) {
+        color: rgba($color-black, 0.5);
+    }
+
+    &:hover {
+        > .expand,
+        > .label {
+            color: $color-black;
+        }
+    }
+
+    > .expand {
+        background: transparent;
+        border: 0;
+        color: currentColor;
+        font-size: inherit;
+        left: 0;
+        line-height: inherit;
+        outline: 0;
+        padding: 0;
+        position: absolute;
+        text-align: center;
+        top: 0;
+        width: 1.125em;
+
+        &::after {
+            content: "\25b8";
+            display: block;
+            position: relative;
+            top: -1px;
+        }
+    }
+
+    > .label {
+        display: block;
+    }
+}
+
+.styleguide-block + .styleguide-block {
+    margin-top: 3em;
+}
+
+.styleguide-block-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 2em;
+
+    > .title {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+        margin-bottom: 0.25em;
+        padding-bottom: 0.5em;
+        width: 100%;
+    }
+}
+
+.styleguide-shy {
+    font-size: smaller;
+    opacity: 0.25;
+}
+
+.styleguide-sourcepath {
+    margin-left: auto;
+}
+
+.styleguide-preview {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAAF0lEQVR4AWP4DwVvoWCgBGAMmMQACQAAuK72AWHjK4wAAAAASUVORK5CYII=');
+    background-size: 8px 8px;
+    border-radius: 3px;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.125);
+    margin: 3em 0 0;
+    padding: 1em;
+}
+
+:not(.styleguide-preview) > table {
+    border-collapse: collapse;
+
+    tr {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    }
+
+    thead tr {
+        border-width: 2px;
+    }
+
+    thead th,
+    tbody td {
+        padding: 0.5em 2em 0.5em 0.5em;
+        text-align: left;
+    }
+}
+
+.hljs {
+    padding: 1em;
+}

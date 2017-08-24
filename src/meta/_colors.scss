@@ -1,27 +1,29 @@
+$color-emerald: #28c76f;
+$color-carnation: #ea5455;
+$color-dodger-blue: #0396ff;
+$color-candlelight: #f8d800;
+
 $color-black: #000;
-$color-japanese-laurel: #06a20d;
-$color-cinnabar: #e43e33;
-$color-matisse: #0b6ba1;
 $color-white: #fff;
-$color-saffron: #fac135;
 
 /*
 ---
 name: Colors
 tag:
   - meta
+  - colors
 category:
   - meta
   - meta/colors
 template: colors
 sourcePath: /meta/_colors.scss
 colors:
-    black: "#000"
-    japanese-laurel: "#06a20d"
-    cinnabar: "#e43e33"
-    matisse: "#0b6ba1"
-    white: "#fff"
-    saffron: "#fac135"
+  emerald: "#{$color-emerald}"
+  carnation: "#{$color-carnation}"
+  dodger-blue: "#{$color-dodger-blue}"
+  candlelight: "#{$color-candlelight}"
+  black: "#{$color-black}"
+  white: "#{$color-white}"
 ---
 
 The following colors are the defined project colors.
@@ -35,4 +37,30 @@ manipulating functions.<sup>[1]</sup><sup>[2]</sup> This will be useful regardin
 [1]: https://robots.thoughtbot.com/controlling-color-with-sass-color-functions
 [2]: http://jackiebalzer.com/color
 [3]: https://davidwalsh.name/sass-color-variables-dont-suck
+
+*/
+
+$gradient-emerald: linear-gradient(45deg, saturate(lighten($color-emerald, 25), 10), $color-emerald);
+$gradient-carnation: linear-gradient(45deg, saturate(lighten($color-carnation, 25), 10), $color-carnation);
+$gradient-dodger-blue: linear-gradient(45deg, saturate(lighten($color-dodger-blue, 25), 10), $color-dodger-blue);
+$gradient-candlelight: linear-gradient(45deg, saturate(lighten($color-candlelight, 25), 10), $color-candlelight);
+
+/*
+---
+name: Gradients
+tag:
+  - meta
+  - gradients
+category:
+  - meta
+  - meta/colors
+template: colors
+sourcePath: /meta/_colors.scss
+colors:
+  emerald: "#{$gradient-emerald}"
+  carnation: "#{$gradient-carnation}"
+  dodger-blue: "#{$gradient-dodger-blue}"
+  candlelight: "#{$gradient-candlelight}"
+---
+
 */

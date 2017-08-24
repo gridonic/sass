@@ -14,6 +14,7 @@ This repository represents our starting point for creating *sane*, *scalable* an
 
 - [normalize.css]
 - [include-media]
+- [family.scss]
 
 🙏 Obeys those principles:
 
@@ -46,6 +47,9 @@ npm run styleguide
 
 # generates the code documentation
 npm run docs
+
+# shows some statistics about the compiled css
+npm run stats
 
 # watches the sass files for changes and builds them automatically
 # including the styleguide and the docs
@@ -80,3 +84,4 @@ npm run test:visual
 [Gemini]: ./gemini
 [downloaded]: https://github.com/gridonic/sass/releases/latest
 [recipes]: https://github.com/gridonic/sass/wiki/Recipes
+[family.scss]: https://lukyvj.github.io/family.scss/

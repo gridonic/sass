@@ -13,6 +13,9 @@
 <h2>Tags</h2>
 <nav class="tags styleguide-nav-tags">
 <% config.collection.tag.forEach((tag) => { %>
-    <a class="link" href="<%= root %>tag/<%= tag %>/index.html"><%= tag %></a>
+    <a class="link" href="<%= root %>tag/<%= tag.replace(' ', '-') %>/index.html"><%= tag %></a>
 <% }) %>
 </nav>
+
+<a class="owner" href="https://gridonic.ch" title="Gridonic"></a>
+<p class="version"><%= timestamp %></p>

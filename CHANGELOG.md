@@ -1,3 +1,20 @@
+# [1.5.0]
+###### 2017-08-24
+
+###### Added
+- [Family.scss] for easier handling of `:nth-child` styles
+- [cssnano] for compressing the production build
+- [StyleStats] to collect some CSS statistics
+- Source maps for default build
+
+###### Changed
+- Use separate stylesheet for vendor files
+- Use config hash for commonly used paths
+- Lots of tiny improvements to styleguide (styles)
+
+###### Fixed
+- Magic importer not importing files multiple times
+
 # [1.4.1]
 ###### 2017-05-18
 
@@ -93,6 +110,7 @@ Lots of new features have been added. 👏
 
 First public release! 🎉
 
+[1.5.0]: https://github.com/gridonic/sass/compare/1.4.1...HEAD
 [1.4.1]: https://github.com/gridonic/sass/compare/1.4.0...1.4.1
 [1.4.0]: https://github.com/gridonic/sass/compare/1.3.0...1.4.0
 [1.3.0]: https://github.com/gridonic/sass/compare/1.2.0...1.3.0
@@ -118,3 +136,6 @@ First public release! 🎉
 [browserlist]: http://browserl.ist/?q=last+2+versions
 [HTML Validator]: https://github.com/zrrrzzt/html-validator
 [validator.w3.org/nu]: https://validator.w3.org/nu/
+[Family.scss]: https://lukyvj.github.io/family.scss/
+[cssnano]: http://cssnano.co/
+[StyleStats]: https://github.com/t32k/stylestats
