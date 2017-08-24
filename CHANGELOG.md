@@ -1,11 +1,19 @@
 # [1.5.0]
-###### 2017-??-??
+###### 2017-08-24
 
 ###### Added
 - [Family.scss] for easier handling of `:nth-child` styles
 - [cssnano] for compressing the production build
 - [StyleStats] to collect some CSS statistics
 - Source maps for default build
+
+###### Changed
+- Use separate stylesheet for vendor files
+- Use config hash for commonly used paths
+- Lots of tiny improvements to styleguide (styles)
+
+###### Fixed
+- Magic importer not importing files multiple times
 
 # [1.4.1]
 ###### 2017-05-18
