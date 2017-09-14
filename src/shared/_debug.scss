@@ -27,7 +27,7 @@ on any element you would like to.
         background-color: transparent;
         background-image: linear-gradient(transparent 50%, rgba(#37f, 0.25) 0%);
         background-repeat: repeat;
-        background-size: 100% vertical-base();
+        background-size: 100% 1lh;
         content: "";
         min-height: 100%;
         left: 0;
@@ -48,8 +48,8 @@ on any element you would like to.
         color: #fff;
         font-family: monospace;
         font-size: 0.75rem;
-        line-height: vertical-base();
-        padding: vertical-base(0.5) 1rem;
+        line-height: 1lh;
+        padding: 0.5lh 1rem;
         position: fixed;
         right: 0;
         white-space: pre-wrap;

@@ -47,6 +47,7 @@
     "node-sass-magic-importer": "^4.1.4",
     "onchange": "^3.2.1",
     "postcss-cli": "^4.1.0",
+    "postcss-lh": "^1.1.4",
     "rimraf": "^2.6.1",
     "sassdoc": "^2.3.0",
     "selenium-standalone": "^6.7.0",

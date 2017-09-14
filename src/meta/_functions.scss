@@ -40,11 +40,3 @@
 
     @return $string;
 }
-
-/// Returns the vertical rhythm base value or a factor of it.
-/// @author Gridonic
-/// @param {Number} $string [1] - Factor of the vertical base
-/// @return {Length}
-@function vertical-base($factor: 1) {
-    @return $base-line-height * $factor;
-}

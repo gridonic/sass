@@ -49,16 +49,34 @@ category:
 sourcePath: /shared/_typography.scss
 ---
 
-There is a Sass function available called `vertical-base(x)`, which you can use to
+There is a Sass-only unit available called `lh`, which you can use to
 get the vertical base value or a factor of it.
 
 **Recommendation**: Try to avoid too tiny fractures. Quarters (¼) or larger are a
 good way to go.
 
+See [jameskolce/postcss-lh](https://github.com/jameskolce/postcss-lh) for
+additional information.
+
 ```scss
-.my-element {
-    margin-bottom: vertical-base(0.5); // Half of vertical base. ⇒ #{$base-line-height * 0.5}
-    margin-top: vertical-base(2); // Double… ⇒ #{$base-line-height * 2}
+:root {
+  font: 16px / 1.5 Helvetica, Arial, sans-serif;
+}
+
+section {
+  margin-bottom: 1lh;
+  padding-top: .5lh;
+}
+
+// Becomes this…
+
+:root {
+  font: 16px / 1.5 Helvetica, Arial, sans-serif;
+}
+
+section {
+  margin-bottom: 1.5rem;
+  padding-top: 0.75rem;
 }
 ```
 
