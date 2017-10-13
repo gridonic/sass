@@ -1,10 +1,11 @@
 /*!-----------------------------------------------------------------------------
    Master Stylesheet.
 
-   Project:       <%= project %>
-   Version:       <%= version %>
-   Contributors:  Gridonic <hello@gridonic.ch>
-   URL:           <%= url %>
+   Project:       {{ name }}
+   Version:       {{ version }}
+   Contributors:  {{ author }}
+   URL:           {{ url }}
+   License:       {{ license }}
    -------------------------------------------------------------------------- */
 
 @import "meta";

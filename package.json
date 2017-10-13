@@ -30,6 +30,7 @@
     "watch": "onchange \"$npm_package_config_src/**/*.scss\" ./aigis -w -i -- concurrently 'npm run styleguide' 'npm run docs'"
   },
   "author": "Gridonic <hello@gridonic.ch>",
+  "url": "https://gridonic.ch",
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^7.1.2",
