@@ -1,7 +1,10 @@
+const pkg = require('./package.json');
+
 module.exports = (ctx) => ({
     plugins: {
         'postcss-lh': {},
-        autoprefixer: {},
-        cssnano: ctx.env === 'prod' ? {} : false
+        'autoprefixer': {},
+        'postcss-replace': { data: pkg },
+        'cssnano': ctx.env === 'prod' ? {} : false
     }
 });
